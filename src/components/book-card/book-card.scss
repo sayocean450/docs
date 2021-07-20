@@ -5,7 +5,6 @@
   
   @include respond(mobile) {
     @include col100(16px 8px 16px 0, column);
-    font: $fontSmall;
   } 
 
   &:hover {
@@ -16,63 +15,46 @@
   &__content {
     @include col50(0, column);
 
-    &-name {
-      color: $blue;
-    }
-
-    &-desc {
-      margin-top: 8px; 
-      font: $fontSmall;
-      color: $black !important;
-
-      @include respond(mobile) {
-        @include col100(0, column);
-        font-style: normal;
-        color: $black;
-        line-height: 1.4;
-        font: $fontExtraSmall;
-      }
-    }
-    
     @include respond(mobile) {
       @include col100(0, column);
       color: $blue;
     }
-    
+
     h3 {
       margin: 0;
     }
-  }
-  
-  &__description {
-    @include col50(0);
-    
-    @include respond(mobile) {
-      @include col100(12px 0);
-      color: $black;
+
+    &-name {
+      color: $blue;
+
+      @include respond(mobile) {
+        font: $fontSmall;
+      }
+    }
+
+    &-book {
+      margin-top: 8px; 
       font: $fontSmall;
+      color: $black;
+
+      @include respond(mobile) {
+        @include col100(0, column);
+        font: $fontExtraSmall;
+      }
     }
   }
-
-  &__info {
+  
+  &__source {
     font: $fontSmall;
     color: $black;
 
     @include respond(mobile) {
-      font: $fontSmall;
-      color: $black;
-      margin-top: 8px;
       font: $fontExtraSmall;
-    }
-  }
-  
-  &__links {
-    @include col15(0 0 0 0, column);
-    align-items: flex-end;
-    
-    @include respond(mobile) {
-      @include col100(12px 0 0 0, column);
-      align-items: flex-end;
+      color: lighten($black, 50%);
+      text-transform: lowercase;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      margin-top: 16px;
     }
   }
 }

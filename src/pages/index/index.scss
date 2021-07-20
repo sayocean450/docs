@@ -9,7 +9,7 @@
   
   @include respond(mobile) {
     @include col100(0 24px 48px 24px);
-    font: $fontMain;
+    font: $fontLarge;
   }
 }
 
@@ -23,6 +23,18 @@
   @include respond(mobile) {
     padding-bottom: 0;
   }
+
+  &__content {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    
+    @include col100(16px 56px 0 56px, row);
+    flex-wrap: wrap;
+
+    @include respond(mobile) {
+      @include col100(0, column);
+    }
+  }
 }
 
 .read-second {
@@ -30,27 +42,11 @@
   grid-column-start: 1;
   grid-column-end: 21;
 
-  background-color: darken($white, 3%);
+  border-top: 8px solid darken($white, 3%);
   @include col100(48px 0 0 0, column);
 
   @include respond(mobile) {
     @include col100(24px 0 0 0, column);
-  }
-
-  & .stories__content {
-    padding: 0;
-
-    & .book-card {
-      padding: 18px 56px;
-
-      &:hover {
-        background-color: $white;
-      }
-
-      @include respond(mobile) {
-        padding: 16px 24px 16px 24px;
-      }
-    }
   }
 }
 

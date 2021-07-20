@@ -1,8 +1,6 @@
-mixin bookCard(name, source, description, info, href, target="_self")
+mixin bookCard(name, book, source, href, target="_self")
     a(href=href, target=target).book-card
         div.book-card__content
             div.book-card__content-name=name
-            if info === ''
-            else
-                div.book-card__content-desc=info
-        div.book-card__info=source
+            div.book-card__content-book=book
+        div.book-card__source=source
