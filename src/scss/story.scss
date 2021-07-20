@@ -18,7 +18,7 @@
 		@include respond(mobile) {
 			@include col100(0, column);
 			margin: 0 0 48px 0;
-			font: $fontExtraSmall;
+			font: $fontSmall;
 		}
 
 		h2 {
