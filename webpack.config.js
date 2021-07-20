@@ -23,7 +23,7 @@ const PATHS = {
   pdf:       path.join(__dirname, './src/pdf'),
   distPdf:   path.join(__dirname, './docs'),
   epub:       path.join(__dirname, './src/epub'),
-  distEpub:  path.join(__dirname, './epub'),
+  distEpub:  path.join(__dirname, './docs'),
 };
 
 /* ПЛАГИНЫ */
