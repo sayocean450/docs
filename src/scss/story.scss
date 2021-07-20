@@ -18,7 +18,7 @@
 		@include respond(mobile) {
 			@include col100(0, column);
 			margin: 0 0 48px 0;
-			font: 19px/28px "KTR", "PT Serif" Georgia, serif;
+			font: $fontExtraSmall;
 		}
 
 		h2 {
@@ -63,7 +63,7 @@
 		}
 
 		&-caption {
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 1.5;
 		}
 	}

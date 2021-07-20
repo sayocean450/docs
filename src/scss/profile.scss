@@ -22,6 +22,7 @@
     padding-top: 8px;
     
     @include respond(mobile) {
+      font: $fontExtraSmall;
       grid-column-start: 1;
       grid-row-start: 2;
       margin: 0 0 24px 0;
@@ -54,6 +55,7 @@
       grid-row-start: 3;
       
       @include respond(mobile) {
+        font: $fontExtraSmall;
         grid-column-start: 1;
         grid-row-start: 4;
       }
