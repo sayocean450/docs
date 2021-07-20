@@ -17,4 +17,53 @@
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: 21;
+
+  padding-bottom: 32px;
+
+  @include respond(mobile) {
+    padding-bottom: 0;
+  }
+}
+
+.read-second {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 21;
+
+  background-color: darken($white, 3%);
+  @include col100(48px 0 0 0, column);
+
+  @include respond(mobile) {
+    @include col100(24px 0 0 0, column);
+  }
+
+  & .stories__content {
+    padding: 0;
+
+    & .book-card {
+      padding: 18px 56px;
+
+      &:hover {
+        background-color: $white;
+      }
+
+      @include respond(mobile) {
+        padding: 16px 24px 16px 24px;
+      }
+    }
+  }
+}
+
+.end {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 21;
+
+  @include col100(72px 56px 48px 56px);
+  font: $fontSmall;
+
+  @include respond(mobile) {
+    padding: 72px 24px 16px 24px;
+    font: $fontExtraSmall;
+  }
 }

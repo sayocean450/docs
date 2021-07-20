@@ -30,8 +30,7 @@
         font-style: normal;
         color: $black;
         line-height: 1.4;
-
-        
+        font: $fontExtraSmall;
       }
     }
     
@@ -63,6 +62,7 @@
       font: $fontSmall;
       color: $black;
       margin-top: 8px;
+      font: $fontExtraSmall;
     }
   }
   
