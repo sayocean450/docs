@@ -56,7 +56,7 @@
   grid-column-end: 21;
 
   @include col100(72px 56px 48px 56px);
-  font: $fontSmall;
+  font: $fontMain;
 
   @include respond(mobile) {
     padding: 72px 24px 16px 24px;

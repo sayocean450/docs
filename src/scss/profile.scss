@@ -18,7 +18,7 @@
   &__annotation {
     grid-column-start: 3;
     grid-row-start: 1;
-    font: $fontSmall;
+    font: $fontMain;
     padding-top: 8px;
     
     @include respond(mobile) {

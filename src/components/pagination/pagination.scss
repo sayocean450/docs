@@ -8,7 +8,7 @@
   
   @include respond(mobile) {
     @include col100(0);
-    font: $fontSmall;
+    font: $fontMain;
     overflow: scroll;
   }
   

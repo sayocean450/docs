@@ -18,7 +18,7 @@
 		@include respond(mobile) {
 			@include col100(0, column);
 			margin: 0 0 48px 0;
-			font: $fontSmall;
+			font: $fontMain;
 		}
 
 		h2 {
@@ -34,7 +34,7 @@
 		}
 
 		&-secondary-info {
-			font: $fontSmall;
+			font: $fontMain;
 			padding: 8px 16px 8px 16px;
 			border-left: 4px solid $blue;
 		}
@@ -63,18 +63,17 @@
 		}
 
 		&-caption {
-			font-size: $fontSmall;
+			font-size: $fontMain;
 			line-height: 1.5;
 
 			@include respond(mobile) {
-				font-size: $fontExtraSmall;
-				color: red;
+				font-size: 10pt;
 			}
 		}
 	}
 
 	&__annotation {
-		font: $fontSmall;
+		font: $fontMain;
 	}
 
 	&__next {

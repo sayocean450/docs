@@ -29,7 +29,7 @@
 
     &__desc {
         @include col100(0 0 24px 0);
-        font: $fontSmall;
+        font: $fontMain;
 
         @include respond(mobile) {
             @include col100(0 24px 16px 24px);
@@ -48,7 +48,7 @@
 
     &__button {
         @include colauto(8px 0 10px 0);
-        font: $fontSmall;
+        font: $fontMain;
         line-height: 1;
         color: $blue !important;
         padding: 0;

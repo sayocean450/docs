@@ -28,14 +28,14 @@
       color: $blue;
 
       @include respond(mobile) {
-        font: $fontSmall;
+        font: $fontMain;
         line-height: 1.5;
       }
     }
 
     &-book {
       margin-top: 8px; 
-      font: $fontSmall;
+      font: $fontMain;
       color: $black;
 
       @include respond(mobile) {
@@ -46,7 +46,7 @@
   }
   
   &__source {
-    font: $fontSmall;
+    font: $fontMain;
     color: $black;
 
     @include respond(mobile) {
