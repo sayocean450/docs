@@ -32,8 +32,8 @@
         font: $fontSmall;
 
         @include respond(mobile) {
-            @include col100(0 24px 24px 24px);
-            font: $fontSmall;
+            @include col100(0 24px 16px 24px);
+            font: $fontExtraSmall;
         }
     }
 
@@ -52,5 +52,9 @@
         line-height: 1;
         color: $blue !important;
         padding: 0;
+
+        @include respond(mobile) {
+            font: $fontExtraSmall;
+        }
     }
 }
