@@ -21,7 +21,9 @@ const PATHS = {
   fonts:     path.join(__dirname, './src/fonts'),
   distFonts: path.join(__dirname, './docs/fonts'),
   pdf:       path.join(__dirname, './src/pdf'),
-  distPdf:    path.join(__dirname, './docs')
+  distPdf:   path.join(__dirname, './docs'),
+  epub:       path.join(__dirname, './src/epub'),
+  distEpub:  path.join(__dirname, './epub'),
 };
 
 /* ПЛАГИНЫ */
@@ -42,6 +44,10 @@ let plugins = [
     {
       from: PATHS.pdf,
       to: PATHS.distPdf
+    },
+    {
+      from: PATHS.epub,
+      to: PATHS.distEpub
     },
     {
       from:   './.htaccess',
