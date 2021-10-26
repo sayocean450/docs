@@ -18,7 +18,7 @@ body.body_dark
     div.content
         div.main-info
             p
-                | Пишу романы, рассказы и повести, изучаю творчество русских реалистов, иногда обозреваю литературу о проблемах современности
+                | Пишу и обозреваю прозу, веду телеграм-канал о русском реализме «Чернотроп»
         div.read-first
             +pageHeadline('Что почитать из прозы')
             div.read-first__content
@@ -37,8 +37,22 @@ body.body_dark
                     'Читать онлайн'
                 )
         div.read-second
-            +pageHeadline('Свежие рецензии')
+            +pageHeadline('Свежие обзоры и рецензии')
             div.list
+                +bookCard(
+                        'Золотая урна, чудо-машина и другие способы изменить конституцию или выбрать священника',
+                        'Методы из книги Давида Ван Рейбрука «Против выборов» и другие невероятные исторические факты',
+                        'Bookmate Journal',
+                        'https://journal.bookmate.com/zolotaya-urna-chudo-mashina-i-drugie-sposoby-izmenit-konstituciyu-ili-vybrat-svyashchennika/',
+                        'blank'
+                )
+                +bookCard(
+                        'Забытый писатель Бестужев-Марлинский',
+                        'От ссылки в Якутию до страшной гибели под Адлером',
+                        'Bookmate Journal',
+                        'https://journal.bookmate.com/zabytyj-pisatel-bestuzhev-marlinskij-ot-ssylki-v-yakutiyu-do-strashnoj-gibeli-pod-adlerom/',
+                        'blank'
+                )
                 +bookCard(
                     'Догоревший Петербург у меня из окна',
                     'Татьяна Млынчик, «Ловля молний на живца»',
@@ -73,21 +87,12 @@ body.body_dark
                     '',
                     'bulgarin.html'
                 )
-                +bookCard(
-                    'Поддаться, чтобы победить',
-                    'Булат Ханов, «Гнев», «Непостоянные величины», «Развлечения для птиц с подрезанными крыльями»',
-                    '',
-                    'khanov.html'
-                )
-                +bookCard(
-                    'Мерцание подтекстов',
-                    'Алексей Поляринов, «Риф»',
-                    '',
-                    'polyarinov-rif.html'
-                )
         div.end 
             p
-                | Здесь больше ничего нет. Листайте наверх или подпишитесь на
+                | Здесь больше ничего нет. Листайте наверх, посетите
+                =" "
+                a(href="stories.html") раздел прозы
+                |  или подпишитесь на
                 =" "
                 a(href="https://t.me/blacktrope" target="blank") телеграм-канал
                 =" "
