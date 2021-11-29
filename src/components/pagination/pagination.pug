@@ -11,8 +11,12 @@ mixin writingTags(activePage)
         if activePage === 'stories'
             a.pagination__year.pagination__year_active(href="stories.html") рассказы
             a.pagination__year(href="novelettes.html") повести
-            //a.pagination__year(href="novels.html") романы
+            a.pagination__year(href="novels.html") романы
+        else if activePage === 'novels'
+            a.pagination__year(href="stories.html") рассказы
+            a.pagination__year(href="novelettes.html") повести
+            a.pagination__year.pagination__year_active(href="novels.html") романы
         else
             a.pagination__year(href="stories.html") рассказы
             a.pagination__year.pagination__year_active(href="novelettes.html") повести
-            //a.pagination__year(href="novels.html") романы
+            a.pagination__year(href="novels.html") романы
