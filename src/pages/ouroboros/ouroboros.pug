@@ -1,0 +1,24 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Уроборос',
+      'Из цикла «Чужие беды»',
+      'http://soshnikov.space/img/misfortunes-og.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('рассказы разных бед', 'misfortunes')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/misfortunes/ouroboros.md
+            .md
+            div.story__next
+                a(href="winger.html") читать следующий рассказ «вингер» →
+                a(href="misfortunes.html#connotation") ← вернуться в содержание
+

@@ -8,16 +8,15 @@ html
     +head(
       'Сошников — Вингер',
       'Из цикла «Чужие беды»',
-      'http://soshnikov.space/img/not-mine-og.jpg',
+      'http://soshnikov.space/img/misfortunes-og.jpg',
       'story'
     )
 body.body_light
     +header()
     div.story
         div.story__content
-            +article-breadcrumb('чужие беды', 'not-mine')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/not-mine/winger.md
+            +article-breadcrumb('рассказы разных бед', 'misfortunes')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/misfortunes/winger.md
             div.story__next
-                a(href="camel.html") читать cледующий рассказ рассказ «верблюд» →
-                a(href="not-mine.html#connotation") ← вернуться в содержание
+                a(href="misfortunes.html#connotation") ← вернуться в содержание
 

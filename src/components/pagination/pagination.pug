@@ -1,10 +1,10 @@
 mixin pagination(activePage)
     div.pagination
         if activePage === 'all'
-            a.pagination__year.pagination__year_active(href="articles.html") рецензии
+            a.pagination__year.pagination__year_active(href="articles.html") статьи
             a.pagination__year(href="cherry-esse.html") черри-эссе
         else if activePage === 'diary'
-            a.pagination__year(href="articles.html") рецензии
+            a.pagination__year(href="articles.html") статьи
             a.pagination__year.pagination__year_active(href="cherry-esse.html") черри-эссе
 mixin writingTags(activePage)
     div.pagination
