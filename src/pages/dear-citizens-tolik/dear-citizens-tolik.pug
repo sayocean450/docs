@@ -8,15 +8,15 @@ html
     +head(
       'Сошников — Толик',
       'Шестой эпизод повести «Дорогие петербуржцы»',
-      'http://soshnikov.space/img/dear-citizens-og-6.jpg',
+      'http://soshnikov.space/img/dear-citizens/text-og-6.jpg',
       'story'
     )
 body.body_light
     +header()
     div.story
         div.story__content
-            +article-breadcrumb('дорогие петербуржцы', 'dear-citizens')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/06-tolik.md
+            +article-breadcrumb('дорогие петербуржцы', 'dear-citizens/text')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novelettes/dear-citizens/text/06-tolik.md
             div.story__next
-                a(href="dear-citizens.html#connotation") ← вернуться в содержание
+                a(href="dear-citizens/text.html#connotation") ← вернуться в содержание
 

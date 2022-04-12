@@ -8,7 +8,7 @@ html
     +head(
       'Сошников — Юрка',
       'Первый эпизод повести «Дорогие петербуржцы»',
-      'http://soshnikov.space/img/dear-citizens-og-1.jpg',
+      'http://soshnikov.space/img/dear-citizens/text-og-1.jpg',
       'story'
     )
 body.body_light
@@ -16,8 +16,8 @@ body.body_light
     div.content
         div.story
             div.story__content
-                +article-breadcrumb('дорогие петербуржцы', 'dear-citizens')
-                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/01-yurka.md
+                +article-breadcrumb('дорогие петербуржцы', 'dear-citizens/text')
+                include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novelettes/dear-citizens/text/01-yurka.md
                 div.story__next
-                    a(href="dear-citizens-evgraphych.html") читать следующий эпизод →
-                    a(href="dear-citizens.html#connotation") ← вернуться в содержание
+                    a(href="dear-citizens/text-evgraphych.html") читать следующий эпизод →
+                    a(href="dear-citizens/text.html#connotation") ← вернуться в содержание

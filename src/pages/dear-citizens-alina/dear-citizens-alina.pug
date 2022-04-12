@@ -8,16 +8,16 @@ html
     +head(
       'Сошников — Алина',
       'Третий эпизод повести «Дорогие петербуржцы»',
-      'http://soshnikov.space/img/dear-citizens-og-3.jpg',
+      'http://soshnikov.space/img/dear-citizens/text-og-3.jpg',
       'story'
     )
 body.body_light
     +header()
     div.story
         div.story__content
-            +article-breadcrumb('дорогие петербуржцы', 'dear-citizens')
-            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novels/dear-citizens/03-alina.md
+            +article-breadcrumb('дорогие петербуржцы', 'dear-citizens/text')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/novelettes/dear-citizens/text/03-alina.md
             div.story__next
-                a(href="dear-citizens-milts.html") читать следующий эпизод →
-                a(href="dear-citizens.html#connotation") ← вернуться в содержание
+                a(href="dear-citizens/text-milts.html") читать следующий эпизод →
+                a(href="dear-citizens/text.html#connotation") ← вернуться в содержание
 
