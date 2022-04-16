@@ -1,0 +1,22 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Дайте мне умереть',
+      'Аким схватился за вилку и поковырялся во втором блюде. «Стандартизированный идеал — вот за что мы не любим еду, выведенную в лабораториях!» — заявил он…',
+      'http://soshnikov.space/img/default.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            +article-breadcrumb('рассказы разных бед', 'misfortunes')
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/misfortunes/let-me-die.md
+            div.story__next
+                a(href="misfortunes.html#connotation") ← вернуться в содержание
+

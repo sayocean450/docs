@@ -16,6 +16,10 @@
       margin: 0;
     }
 
+    &_cherry {
+      margin: 0 0 56px 0;
+    }
+
     @include respond(mobile) {
       @include col100(24px 24px 24px 24px, column);
       font: $fontMain;

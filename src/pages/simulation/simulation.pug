@@ -1,0 +1,22 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Порадуй своего гуманоида',
+      'К тридцати годам Миха окончательно убедился, что все мы живём в симуляции или, если хотите, в многопользовательской игре, где людьми управляют инопланетяне',
+      'http://soshnikov.space/img/default.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/other/simulation.md
+            div.story__next
+                a(href="misfortunes.html#connotation") ← вернуться в содержание
+                a(href="camel.html") читать следующий рассказ «верблюд» →
+

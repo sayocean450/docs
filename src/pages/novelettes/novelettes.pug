@@ -10,10 +10,10 @@ include ../../components/pagination/pagination
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
-      'Артём Сошников • Повести',
-      '',
-      'http://soshnikov.space/img/default.jpg',
-      ''
+        'Артём Сошников • Романы',
+        '',
+        'http://soshnikov.space/img/default.jpg',
+        ''
     )
 body.body_dark
     +header('dark', 'writing')
@@ -23,10 +23,9 @@ body.body_dark
             +writingTags('novelettes')
         div.stories__content
             +bookBlock(
-                'inside',
-                'Инсайд',
-                'Повесть-сериал о политическом кризисе в независимом Петрограде будущего. Одна неделя — один эпизод.', 
-                'inside.html',
-                'читать онлайн'
-            )
-
+                'observer', 
+                'Наблюдатель', 
+                'Дебютная повесть, первый русский IT-триллер по мнению человека, который его написал. Лонг-лист премий «Лицей» (2021) и «Нацбест» (2022)',
+                'observer.html', 
+                'читать онлайн или скачать'
+)
