@@ -50,8 +50,21 @@
   }
 }
 
-.end {
+.read-third {
   grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 21;
+
+  border-top: 8px solid darken($white, 3%);
+  @include col100(48px 0 0 0, column);
+
+  @include respond(mobile) {
+    @include col100(24px 0 0 0, column);
+  }
+}
+
+.end {
+  grid-row-start: 5;
   grid-column-start: 1;
   grid-column-end: 21;
 

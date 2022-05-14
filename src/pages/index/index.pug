@@ -9,7 +9,7 @@ doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
         'Артём Сошников',
-        'Пишу и обозреваю прозу, веду телеграм-канал о реализме «Чернотроп»',
+        'Пишу повести и рассказы, обозреваю прозу, веду телеграм-канал о реализме «Чернотроп»',
         'http://soshnikov.space/img/default.jpg',
         ''
     )
@@ -18,7 +18,7 @@ body.body_dark
     div.content
         div.main-info
             p
-                | Пишу и обозреваю прозу, веду телеграм-канал о русском реализме «Чернотроп»
+                | Пишу повести и рассказы, обозреваю прозу, веду телеграм-канал о русском реализме «Чернотроп»
         div.read-first
             +pageHeadline('Что почитать из прозы')
             div.read-first__content
@@ -37,14 +37,58 @@ body.body_dark
                     'Читать онлайн'
                 )
         div.read-second
-            +pageHeadline('Лучшие обзоры и рецензии')
+            +pageHeadline('Материалы о писателях')
             div.list
                 +bookCard(
-                        'Забытый писатель Бестужев-Марлинский',
-                        'От ссылки в Якутию до страшной гибели под Адлером',
-                        'Bookmate Journal',
-                        'https://journal.bookmate.com/zabytyj-pisatel-bestuzhev-marlinskij-ot-ssylki-v-yakutiyu-do-strashnoj-gibeli-pod-adlerom/',
-                        'blank'
+                    'Наблюдатель за поражёнными',
+                    'Незаслуженно забытый писатель-эмигрант Гайто Газданов жил в Париже, более двадцати лет работал ночным таксистом и считался главным конкурентом Набокова',
+                    'Чернотроп',
+                    'gazdanov.html',
+                    'blank'
+                )
+                +bookCard(
+                    'Забытый писатель Бестужев-Марлинский',
+                    'Одним из первых увлекся романтизмом и реализмом, был сослан в Сибирь за участие в восстании декабристов, воевал рядовым в Дагестане и описал Кавказ раньше классиков русской литературы',
+                    'Bookmate Journal',
+                    'https://journal.bookmate.com/zabytyj-pisatel-bestuzhev-marlinskij-ot-ssylki-v-yakutiyu-do-strashnoj-gibeli-pod-adlerom/',
+                    'blank'
+                )
+                +bookCard(
+                    'Любовь и горе в прозе Михаила Погодина',
+                    'Страдания крестьян, протофем-экшн и невозможность любви — в шести рассказах бывшего крепостного, доросшего до тайного советника Николая I',
+                    'Bookmate Journal',
+                    'pogodin-stories.html',
+                    'blank'
+                )
+                +bookCard(
+                    'Отец русского пиара',
+                    'Фаддей Булгарин — первый русский пиарщик, бравший Москву в рядах армии Наполеона, агент Третьего отделения и цензор Пушкина',
+                    'Чернотроп',
+                    'bulgarin.html'
+                )
+                +bookCard(
+                    'Почему Иван Гончаров — лучший друг миллениала',
+                    'Потому что вёл популярный тревел-блог, увлекался автофикшном и много прокрастинировал',
+                    'Bookmate Journal',
+                    'https://journal.bookmate.com/pochemu-ivan-goncharov-luchshii-drug-milleniala/',
+                    'blank'
+                )
+        div.read-third
+            +pageHeadline('Советую почитать')
+            div.list
+                +bookCard(
+                    'Вневременный Набоков',
+                    'Владимир Набоков, «Камера обскура»',
+                    '',
+                    'nabokov-camera-obscura.html',
+                    'blank'
+                )
+                +bookCard(
+                    '«Мне просто всё обрыдло»',
+                    'Борис Рыжий, «Роттердамский дневник»',
+                    '',
+                    'carrots-rotterdam.html',
+                    'blank'
                 )
                 +bookCard(
                     'Догоревший Петербург у меня из окна',
@@ -54,31 +98,18 @@ body.body_dark
                     'blank'
                 )
                 +bookCard(
+                    'Поддаться, чтобы победить',
+                    'Булат Ханов, три романа',
+                    'Прочтение',
+                    'khanov.html',
+                    'blank'
+                )
+                +bookCard(
                     'Дремучий лес интерпретаций',
                     'Александр Соболев, «Грифоны охраняют лиру»',
                     'Прочтение',
                     'https://prochtenie.org/reviews/30628',
                     'blank'
-                )
-                +bookCard(
-                    'Почему Иван Гончаров — лучший друг миллениала',
-                    'Вел популярный тревел-блог, увлекался автофикшном и много прокрастинировал',
-                    'Bookmate Journal',
-                    'https://journal.bookmate.com/pochemu-ivan-goncharov-luchshii-drug-milleniala/',
-                    'blank'
-                )
-                +bookCard(
-                    '«Я несчастен — и не знаю почему»',
-                    'Лавкрафт, Кафка, Зощенко и другие писатели-меланхолики',
-                    'Bookmate Journal',
-                    'https://journal.bookmate.com/ya-neschasten-i-ne-znayu-pochemu-lavkraft-kafka-zoshchenko-i-drugie-pisateli-melanholiki/',
-                    'blank'
-                )
-                +bookCard(
-                    'Отец русского пиара',
-                    'Фаддей Булгарин, «Иван Выжигин»',
-                    '',
-                    'bulgarin.html'
                 )
         div.end 
             p
