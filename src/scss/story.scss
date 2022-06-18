@@ -21,6 +21,12 @@
 			font: $fontMain;
 		}
 
+		p {
+			&:last-of-type {
+				display: none;
+			}
+		}
+
 		h2 {
 			margin: 24px 0 32px 0;
 

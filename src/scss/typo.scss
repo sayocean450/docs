@@ -3,7 +3,7 @@
 $fontExtraSmall: 13pt/21pt 'KTR', 'PT Serif' Georgia, serif;
 $fontMain: 14pt/22pt 'KTR', 'PT Serif' Georgia, serif;
 $fontLarge: 24pt/34pt 'KTR', 'PT Serif', Georgia, serif;
-$fontExtraLarge: 40pt/56pt 'KTR', 'PT Serif', Georgia, serif;
+$fontExtraLarge: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
 
 a {
   color: $blue;
@@ -12,7 +12,7 @@ a {
 
 h1 {
   font: $fontExtraLarge;
-  margin: 0 0 32px 0;
+  margin: 0 0 20px 0;
   
   @include respond(mobile) {
     font: $fontLarge;
