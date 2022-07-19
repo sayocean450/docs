@@ -1,0 +1,62 @@
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'Артём Сошников',
+      'пишу и обозреваю прозу, веду телеграм-канал о реализме «чернотроп»',
+      'http://soshnikov.space/img/default.jpg',
+      ''
+    )
+body.body_dark
+    //+header('dark', 'inactive')
+    div.content
+        div.sources
+            div.sources__wrap
+                section.sources__wrap-section
+                    div.sources__wrap-section-avatar
+                        img(src="http://soshnikov.space/primorsk.jpg")
+                    div.sources__wrap-section-links
+                        a(href="#telegram") telegram-каналы
+                        a(href="#writing") проза
+                        a(href="#reviews") рецензии
+                        a(href="#best-articles") лучшие материалы
+                section.sources__wrap-section
+                    h2 Телеграм-каналы
+                    div.sources__wrap-section-link-row
+                        a(href="https://t.me/blacktrope") Чернотроп
+                        span Авторский канал о русской прозе, классической и современной
+                    div.sources__wrap-section-link-row
+                        a(href="https://t.me/artem_soshnikov") Сошников
+                        span Лента на смену Фейсбуку: рассуждения, мысли, воспоминания, анонсы
+                section.sources__wrap-section
+                    h2 Проза
+                    div.sources__wrap-section-link-row
+                        a(href="korpisaari.html") Остров глухого леса
+                        span Резиденция Дома творчества «Переделкино», 2022
+                    div.sources__wrap-section-link-row
+                        a(href="coupe.html") Купе
+                        span Зин «Бетон», 2022
+                    div.sources__wrap-section-link-row
+                        a(href="https://www.colta.ru/articles/molodaya_rossiya/29414-artem-soshnikov-dni-lokalnoy-zhizni") Дни локальной жизни
+                        span Спецпроект Colta «Молодая Россия», 2022
+                    div.sources__wrap-section-link-row
+                        a(href="let-me-die.html") Дайте мне умереть
+                        span Зин «Скобы», 2021
+                    div.sources__wrap-section-link-row
+                        a(href="simulation.html") Порадуй своего гуманоида
+                        span «Dutch Rudder», 2021
+                section.sources__wrap-section
+                    h2 Лучшие материалы
+                    div.sources__wrap-section-link-row
+                        a(href="https://t.me/blacktrope") Чернотроп
+                        span Авторский канал о русской прозе, классической и современной
+
+

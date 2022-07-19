@@ -1,0 +1,49 @@
+.sources {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 20;
+
+  &__wrap {
+    @include col100(0, column);
+    width: 320px;
+    margin: 0 auto;
+    font-family: "PT Root UI", san-serif;
+
+    a {
+      background: linear-gradient(to right, rgba($blue, 40%), rgba(#9E00FF, 40%) 50%);
+      background-position: 0 95%;
+      background-size: 100% 0.3px;
+      background-repeat: repeat-x;
+    }
+
+    &-section {
+      @include col100(0 0 24px 0, column);
+
+      h2 {
+        margin: 0;
+      }
+
+      &-link-row {
+        @include col100(10px 0, column);
+        font-size: 14pt;
+
+        span {
+          margin-top: 10px;
+          font: 11pt/16pt 'KTR', 'PT Serif' Georgia, serif;
+        }
+      }
+
+      &-avatar {
+        @include colauto(0 0 24px 0);
+      }
+
+      &-links {
+        @include col100(0, column);
+
+        a {
+          margin: 0 0 4px 0;
+        }
+      }
+  }
+}
+}
