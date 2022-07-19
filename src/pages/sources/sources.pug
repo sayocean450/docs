@@ -15,48 +15,50 @@ html
       'http://soshnikov.space/img/default.jpg',
       ''
     )
-body.body_dark
-    //+header('dark', 'inactive')
-    div.content
-        div.sources
-            div.sources__wrap
-                section.sources__wrap-section
-                    div.sources__wrap-section-avatar
-                        img(src="http://soshnikov.space/primorsk.jpg")
-                    div.sources__wrap-section-links
-                        a(href="#telegram") telegram-каналы
-                        a(href="#writing") проза
-                        a(href="#reviews") рецензии
-                        a(href="#best-articles") лучшие материалы
-                section.sources__wrap-section
-                    h2 Телеграм-каналы
-                    div.sources__wrap-section-link-row
-                        a(href="https://t.me/blacktrope") Чернотроп
-                        span Авторский канал о русской прозе, классической и современной
-                    div.sources__wrap-section-link-row
-                        a(href="https://t.me/artem_soshnikov") Сошников
-                        span Лента на смену Фейсбуку: рассуждения, мысли, воспоминания, анонсы
-                section.sources__wrap-section
-                    h2 Проза
-                    div.sources__wrap-section-link-row
-                        a(href="korpisaari.html") Остров глухого леса
-                        span Резиденция Дома творчества «Переделкино», 2022
-                    div.sources__wrap-section-link-row
-                        a(href="coupe.html") Купе
-                        span Зин «Бетон», 2022
-                    div.sources__wrap-section-link-row
-                        a(href="https://www.colta.ru/articles/molodaya_rossiya/29414-artem-soshnikov-dni-lokalnoy-zhizni") Дни локальной жизни
-                        span Спецпроект Colta «Молодая Россия», 2022
-                    div.sources__wrap-section-link-row
-                        a(href="let-me-die.html") Дайте мне умереть
-                        span Зин «Скобы», 2021
-                    div.sources__wrap-section-link-row
-                        a(href="simulation.html") Порадуй своего гуманоида
-                        span «Dutch Rudder», 2021
-                section.sources__wrap-section
-                    h2 Лучшие материалы
-                    div.sources__wrap-section-link-row
-                        a(href="https://t.me/blacktrope") Чернотроп
-                        span Авторский канал о русской прозе, классической и современной
+body.body_source
+    div.sources
+        section.sources__section
+            div.sources__section-avatar
+                img(src="http://soshnikov.space/img/primorsk.jpg")
+            div.sources__section-desc
+                h1 Артём Сошников—писатель и литературный обозреватель из Петербурга.
+            //div.sources__section-links
+                a(href="#telegram") Telegram-каналы
+                a(href="#writing") Проза
+                a(href="#reviews") Рецензии
+                a(href="#best-articles") Лучшие материалы
+        section.sources__section.telegram
+            h2 Телеграм-каналы
+            div.sources__section-link-row
+                a(href="https://t.me/blacktrope") Чернотроп
+                span Авторский канал о русской прозе, классической и современной
+            div.sources__section-link-row
+                a(href="https://t.me/artem_soshnikov") Сошников
+                span Лента на смену Фейсбуку: рассуждения, мысли, воспоминания, анонсы
+        section.sources__section
+            h2 Рассказы
+            div.sources__section-link-row
+                a(href="korpisaari.html") Остров глухого леса
+                span Резиденция Дома творчества «Переделкино», 2022
+            div.sources__section-link-row
+                a(href="coupe.html") Купе
+                span Зин «Бетон», 2022
+            div.sources__section-link-row
+                a(href="https://www.colta.ru/articles/molodaya_rossiya/29414-artem-soshnikov-dni-lokalnoy-zhizni") Дни локальной жизни
+                span Спецпроект Colta «Молодая Россия», 2022
+            div.sources__section-link-row
+                a(href="selfie-rospechat.html") Роспечать
+                span из цикла «Вот мои селфи»
+            div.sources__section-link-row
+                a(href="selfie-classic.html") Классика
+                span из цикла «Вот мои селфи»
+        section.sources__section
+            h2 Черри-эссе
+            div.sources__section-link-row
+                a(href="instagram.html") Наш реализм сильнее ваших инстаграмов
+                span Когда Инстаграм ещё был молодым, а камеры в смартфонах уступали зеркалкам, мы полюбили фотографировать себя...
+            div.sources__section-link-row
+                a(href="splean-cold-winter.html") Холодные зимы
+                span МЧС предупредило, что ночью на дорогах ожидается гололедица и я впервые задумался...
 
 
