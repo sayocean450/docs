@@ -105,6 +105,10 @@
 	&__row {
 		@include col100(0, row, space-between);
 
+		@include respond(mobile) {
+			@include col100(0, column);
+		}
+
 		a {
 			color: $black;
 		}
