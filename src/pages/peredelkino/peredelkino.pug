@@ -2,6 +2,7 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-headline/article-headline
 include ../../components/article-breadcrumb/article-breadcrumb
+include ../../components/book-block/book-block
 
 doctype html
 html
@@ -17,3 +18,22 @@ body.body_light
         div.story__content
             +article-breadcrumb('черри-эссе', 'cherry-esse')
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/cherry-esse/2022/peredelkino.md
+            div.related-articles
+                h2 Не допили кофе? 🙂 Так почитайте ещё:
+                div.related-articles__row
+                    +bookBlock(
+                        'autofiction-review',
+                        'О хорошем автофикшне',
+                        'Когда берусь за автофикшн-прозу, всегда оцениваю её по четырём критериям: интонация, материал, стиль и сюжет...',
+                        'autofiction-review.html',
+                        'Читать онлайн',
+                        '50'
+                    )
+                    +bookBlock(
+                        'instagram',
+                        'Наш реализм сильнее ваших инстаграмов',
+                        'Когда Инстаграм ещё был молодым, а камеры в смартфонах уступали зеркалкам, мы полюбили фотографировать себя…',
+                        'instagram.html',
+                        'Читать',
+                        '50'
+                    )
