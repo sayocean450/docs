@@ -99,3 +99,18 @@
 		}
 	}
 }
+
+.related-articles {
+	@include col100(0, column);
+	&__row {
+		@include col100(0, row, space-between);
+
+		a {
+			color: $black;
+		}
+
+		&-col {
+			@include col30(0);
+		}
+	}
+}

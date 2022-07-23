@@ -1,10 +1,10 @@
-mixin bookBlock(id, headline, desc, mainLink, mainText)
-    div.book-block(href="#")
+mixin bookBlock(id, headline, desc, mainLink, mainText, mode)
+    div(class=`book-block book-block${mode}`, href="#")
         a(href=mainLink)
-            div.book-block__cover
+            div(class=`book-block__cover book-block${mode}__cover`)
                 img(src=`http://soshnikov.space/img/${id}-og.jpg`)
             div.book-block__headline
                 h3=headline
-            div.book-block__desc=desc
-            div.book-block__links
+            divbook-block__desc=desc
+            //div.book-block__links
                 a.book-block__button(href=mainLink)=mainText
