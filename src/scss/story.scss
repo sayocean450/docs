@@ -101,6 +101,7 @@
 
 .related-articles {
 	@include col100(0, column);
+
 	&__row {
 		@include col100(0, row, space-between);
 
@@ -115,5 +116,9 @@
 		&-col {
 			@include col30(0);
 		}
+	}
+
+	h2 {
+		margin: 24px 0;
 	}
 }
