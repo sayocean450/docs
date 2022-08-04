@@ -1,7 +1,7 @@
 .story {
 	grid-column-start: 1;
 	grid-column-end: 21;
-	@include col100(0, column, flex-start, center);
+	@include col100(48px 0 0 0, column, flex-start, center);
 
 	@include respond(mobile) {
 		@include col100(0 24px, column, flex-start, center);
@@ -28,7 +28,6 @@
 		}
 
 		h2 {
-			margin: 24px 0 32px 0;
 
 			+ .story__annotation {
 				margin: -16px 0 32px 0;

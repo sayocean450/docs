@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font: $fontLarge;
-  margin: 0 0 24px 0;
+  margin: 24px 0 16px 0;
 
   @include respond(mobile) {
     font: $fontLarge;
