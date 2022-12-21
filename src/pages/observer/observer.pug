@@ -1,0 +1,35 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+
+
+doctype html
+html
+    +head(
+      'Сошников — Наблюдатель',
+      'Книжный сериал на Букмейте, первый IT-триллер русской прозы по версии человека, который его написал))',
+      'http://soshnikov.space/img/observer-og.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.profile
+        div.profile__title
+            h2 Наблюдатель
+        div.profile__annotation
+            p Антон работает в Петербурге менеджером IT-компании и вполне доволен жизнью. Только вот у жизни на него свои планы: во время очередной командировки Антон умирает. Однако на этом его земной путь не заканчивается: Антон становится наблюдателем — мертвым в мире людей, обязанным следить за давно установившимся порядком.
+            p Каждый человек проходит путь от рождения до гроба. Но кто сказал, что это финал? Кто сказал, что смерть нельзя преодолеть?
+        div.profile__cover
+            img(src="http://soshnikov.space/img/observer-cover.jpg")
+        div.profile__connotation-title#connotation
+            h2 Эпизоды
+        div.profile__connotation-contents
+            div.profile__connotation-section
+                a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=1&episode_uuid=v8JDGYa0') Эпизод 1. На краю
+                a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=2&episode_uuid=NzIIIbkV') Эпизод 2. Поворот не туда
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 3. Свежий труп, 28.12
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 4. Умер — наблюдай, 04.01
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 5. Доживут не все, 11.01
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 6. По ту сторону смерти, 18.01
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 7. Из плоти и крови, 25.01
+                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 8. Post mortem, 01.02
