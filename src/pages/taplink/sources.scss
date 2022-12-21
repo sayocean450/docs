@@ -62,6 +62,7 @@ $sourceTextSmall: 11pt/15pt 'PT Root UI', 'Arial', san-serif;
       font-weight: bold;
       margin: 0 0 8px 0;
       color: white;
+      line-height: 130%;
     }
 
     &-link-row {
@@ -71,6 +72,10 @@ $sourceTextSmall: 11pt/15pt 'PT Root UI', 'Arial', san-serif;
       span {
         margin-top: 4px;
         font: $sourceTextSmall;
+      }
+
+      &_one-line {
+        padding-top: 4px;
       }
     }
   }
@@ -84,4 +89,11 @@ $sourceTextSmall: 11pt/15pt 'PT Root UI', 'Arial', san-serif;
   padding-bottom: 12px;
   border-radius: 16px;
   margin: -16px 0 32px 0;
+}
+
+.observer {
+  border: 1px solid hsla(0, 0%, 18%, 1.00);
+  @include col100(24px 24px 32px 24px, column);
+  border-radius: 16px;
+  margin: -16px 0 48px 0;
 }
