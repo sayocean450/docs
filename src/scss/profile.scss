@@ -47,31 +47,37 @@
       width: 100%;
     }
   }
-  
-  &__connotation {
-    &-title {
-      grid-column-start: 1;
-      grid-row-start: 3;
 
+  &__row {
+    &-title {
       h2 {
         margin: 0 0 0 0;
       }
     }
-    
+
     &-contents {
-      grid-column-start: 3;
-      grid-row-start: 3;
-      
       @include respond(mobile) {
         font: $fontExtraSmall;
         grid-column-start: 1;
         grid-row-start: 4;
       }
     }
+  }
+  
+  &__connotation {
+    &-title {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
     
+    &-contents {
+      grid-column-start: 3;
+      grid-row-start: 3;
+    }
+
     &-section {
       @include col100(0 0 48px 0, column);
-      
+
       @include respond(mobile) {
         @include col100(0 0 16px 0, column);
       }
@@ -91,6 +97,26 @@
       
       @include respond(mobile) {
         font: $fontMain;
+      }
+    }
+  }
+
+  &__audio {
+    &-title {
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    &-contents {
+      grid-column-start: 3;
+      grid-row-start: 4;
+    }
+
+    &-section {
+      @include col100(0 0 48px 0, row);
+
+      @include respond(mobile) {
+        @include col100(0 0 16px 0, column);
       }
     }
   }

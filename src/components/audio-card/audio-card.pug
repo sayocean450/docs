@@ -1,0 +1,6 @@
+mixin audioCard(name, audio, source, href, target="_self")
+    a(href=href, target=target).audio-card
+        div.audio-card__content
+            div.audio-card__content-name=name
+            div.audio-card__content-audio=audio
+        div.audio-card__source=source

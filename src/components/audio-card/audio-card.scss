@@ -1,0 +1,61 @@
+.book-card {
+  @include col100(18px 24px 18px 24px, row, space-between);
+  font: $fontMain;
+  border-bottom: 1px solid darken($white, 10%);
+  
+  @include respond(mobile) {
+    @include col100(16px 8px 16px 0, column);
+  } 
+
+  &:hover {
+    background-color: darken($white, 3%);
+    transition: 0.2s;
+  }
+  
+  &__content {
+    @include col50(0, column);
+
+    @include respond(mobile) {
+      @include col100(0, column);
+      color: $blue;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    &-name {
+      color: $blue;
+
+      @include respond(mobile) {
+        font: $fontMain;
+        line-height: 1.5;
+      }
+    }
+
+    &-book {
+      margin-top: 8px; 
+      font: $fontMain;
+      color: $black;
+
+      @include respond(mobile) {
+        @include col100(0, column);
+        font: $fontExtraSmall;
+      }
+    }
+  }
+  
+  &__source {
+    font: $fontMain;
+    color: $black;
+
+    @include respond(mobile) {
+      font: $fontExtraSmall;
+      color: lighten($black, 50%);
+      text-transform: lowercase;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      margin-top: 16px;
+    }
+  }
+}

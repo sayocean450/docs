@@ -1,0 +1,10 @@
+mixin audioBlock(id, headline, desc, mainLink, mainText, mode)
+    div(class=`audio-block audio-block${mode}`, href="#")
+        a(href=mainLink)
+            div(class=`audio-block__cover audio-block${mode}__cover`)
+                img(src=`http://soshnikov.space/img/${id}-og.jpg`)
+            div.audio-block__headline
+                h4=headline
+            div.audio-block__desc=desc
+            //div.audio-block__links
+                a.audio-block__button(href=mainLink)=mainText
