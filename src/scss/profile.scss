@@ -113,7 +113,27 @@
     }
 
     &-section {
-      @include col100(0 0 48px 0, row);
+      @include col100(0 0 48px 0, row, space-between);
+
+      @include respond(mobile) {
+        @include col100(0 0 16px 0, column);
+      }
+    }
+  }
+
+  &__materials {
+    &-title {
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+
+    &-contents {
+      grid-column-start: 3;
+      grid-row-start: 5;
+    }
+
+    &-section {
+      @include col100(0 0 48px 0, row, space-between);
 
       @include respond(mobile) {
         @include col100(0 0 16px 0, column);
