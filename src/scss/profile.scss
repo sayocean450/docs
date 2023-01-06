@@ -100,6 +100,10 @@
       grid-column-start: 1;
       grid-row-start: 4;
 
+      h2 {
+        margin-top: 0;
+      }
+
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 5;
@@ -129,6 +133,10 @@
     &-title {
       grid-column-start: 1;
       grid-row-start: 5;
+
+      h2 {
+        margin-top: 0;
+      }
 
       @include respond(mobile) {
         grid-column-start: 1;
