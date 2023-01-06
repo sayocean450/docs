@@ -20,7 +20,7 @@
     }
 
     @include respond(mobile) {
-        @include col100(0 0 48px 0, column);
+        @include col100(0 0 8px 0, column);
     }
 
     a {
@@ -46,7 +46,7 @@
 
         @include respond(mobile) {
             font: $fontMain;
-            @include col100(0 0 0 24px);
+            @include col100(0 0 0 0);
         }
     }
 
