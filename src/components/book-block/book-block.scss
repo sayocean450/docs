@@ -20,7 +20,7 @@
     }
 
     @include respond(mobile) {
-        @include col100(0 0 48px 0, column);
+        @include col100(0, column);
     }
 
     a {
@@ -28,7 +28,7 @@
     }
 
     &__cover {
-        margin: 0 0 8px 0;
+        margin: 0 0 16px 0;
 
         img {
             width: 100%;
@@ -41,22 +41,26 @@
         color: $blue;
 
         h3 {
-            margin: 0 0 8px 0;
+            margin: 0 0 4px 0;
         }
 
         @include respond(mobile) {
-            font: $fontMain;
-            @include col100(0 0 0 24px);
+            font: $fontMainMobile;
+            @include col100(0);
+
+            h3 {
+                margin: 0 0 8px 0;
+            }
         }
     }
 
     &__desc {
-        @include col100(0 0 24px 0);
+        @include col100(0);
         font: $fontMain;
 
         @include respond(mobile) {
-            @include col100(0 24px 16px 24px);
-            font: $fontExtraSmall;
+            @include col100(0 0 32px 0);
+            font: $fontMainMobile;
         }
     }
 
