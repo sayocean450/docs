@@ -2,20 +2,22 @@
   display: grid;
   grid-template-columns: auto 10% auto 10% 15%;
   grid-template-rows: auto 48px auto;
-  padding: 24px 56px 0 56px;
+  padding: 24px 0 0 0;
   
   @include respond(mobile) {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
-    padding: 0 24px;
+    padding: 0;
   }
   
   &__title {
     grid-column-start: 1;
     grid-row-start: 1;
+    padding: 0 0 0 56px;
 
     @include respond(mobile) {
       grid-row-start: 2;
+      padding: 0 24px;
     }
 
     h2 {
@@ -27,13 +29,14 @@
     grid-column-start: 3;
     grid-row-start: 1;
     font: $fontMainDesktop;
-    padding-top: 8px;
+    padding: 8px 0 0 0;
     
     @include respond(mobile) {
       font: $fontMainMobile;
       grid-column-start: 1;
       grid-row-start: 3;
       margin: 0 0 24px 0;
+      padding: 8px 24px 0 24px;
     }
   }
   
@@ -41,12 +44,12 @@
     grid-column-start: 5;
     grid-row-start: 1;
     justify-self: end;
-    @include col100(0, column);
+    @include col100(0 56px 0 0, column);
     
     @include respond(mobile) {
       grid-column-start: 1;
       grid-row-start: 1;
-      @include col100(0 0 24px 0, column);
+      @include col100(0 24px 24px 24px, column);
     }
     
     img {
@@ -63,9 +66,11 @@
     &-title {
       grid-column-start: 1;
       grid-row-start: 3;
+      padding: 0 0 0 56px;
 
       @include respond(mobile) {
         grid-row-start: 4;
+        padding: 0 24px;
       }
 
       h2 {
@@ -84,7 +89,7 @@
         grid-column-start: 1;
         grid-row-start: 5;
 
-        @include col100(0 0 16px 0, column);
+        @include col100(0 24px 16px 24px, column);
       }
     }
     
@@ -111,10 +116,12 @@
     &-title {
       grid-column-start: 1;
       grid-row-start: 4;
+      padding: 0 0 0 56px;
 
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 6;
+        padding: 0 24px;
       }
 
       h2 {
@@ -130,7 +137,7 @@
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 7;
-        @include col100(0 0 16px 0, column);
+        @include col100(0 24px 16px 24px, column);
       }
     }
   }
@@ -139,15 +146,23 @@
 
     &-title {
       grid-column-start: 1;
+      grid-column-end: 6;
       grid-row-start: 5;
+      border-top: 8px solid darken($white, 3%);
+      padding: 0 0 0 56px;
 
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 8;
+        padding: 0 24px;
       }
 
       h2 {
-        margin-top: 0;
+        margin: 48px 0 0 0;
+
+        @include respond(mobile) {
+          margin: 24px 0;
+        }
       }
     }
 
@@ -155,18 +170,50 @@
       grid-column-start: 1;
       grid-column-end: 6;
       grid-row-start: 6;
+      border-bottom: 8px solid darken($white, 3%);
+      padding: 0 56px 56px 56px;
 
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 9;
+        padding: 0 24px;
+      }
+    }
+  }
+
+  &__ost {
+
+    &-title {
+      grid-column-start: 1;
+      grid-row-start: 7;
+      padding: 0 0 0 56px;
+
+      @include respond(mobile) {
+        grid-column-start: 1;
+        grid-row-start: 10;
+        padding: 0 24px;
+      }
+
+      h2 {
+        margin: 48px 0 0 0;
+
+        @include respond(mobile) {
+          margin: 24px 0 0 0;
+        }
       }
     }
 
-    &-section {
-      @include col100(0 0 48px 0, row, space-between);
+    &-contents {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 7;
+      margin: 48px 0 0 0;
 
       @include respond(mobile) {
-        @include col100(0 0 16px 0, column);
+        grid-column-start: 1;
+        grid-row-start: 11;
+        margin: 24px 0 0 0;
+        padding: 0 24px;
       }
     }
   }
