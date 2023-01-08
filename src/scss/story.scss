@@ -12,13 +12,13 @@
 		align-content: center;
 		max-width: 700px;
 		text-transform: none;
-		font: $fontMain;
+		font: $fontMainDesktop;
 		margin: 0 0 48px 0;
 
 		@include respond(mobile) {
 			@include col100(0, column);
 			margin: 0 0 48px 0;
-			font: $fontMain;
+			font: $fontMainDesktop;
 		}
 
 		p {
@@ -39,7 +39,7 @@
 		}
 
 		&-secondary-info {
-			font: $fontMain;
+			font: $fontMainDesktop;
 			padding: 8px 16px 8px 16px;
 			border-left: 4px solid $blue;
 		}
@@ -68,7 +68,7 @@
 		}
 
 		&-caption {
-			font-size: $fontMain;
+			font-size: $fontMainDesktop;
 			line-height: 1.5;
 
 			@include respond(mobile) {
@@ -78,12 +78,12 @@
 	}
 
 	&__annotation {
-		font: $fontMain;
+		font: $fontMainDesktop;
 	}
 
 	&__next {
 		@include col100(0 0 24px 0, row, space-between);
-		font: $fontMain;
+		font: $fontMainDesktop;
 
 		@include respond(mobile) {
 			@include col100(0 0 24px 0, column, space-between);

@@ -10,7 +10,7 @@
 
     @include col50(0px 56px 0 56px, column);
     color: $black;
-    font: $fontMain;
+    font: $fontMainDesktop;
 
     p {
       margin: 0;
@@ -22,7 +22,7 @@
 
     @include respond(mobile) {
       @include col100(24px 24px 24px 24px, column);
-      font: $fontMain;
+      font: $fontMainDesktop;
     }
   }
 }

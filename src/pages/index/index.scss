@@ -4,16 +4,16 @@
   grid-column-end: 21;
   
   @include col80(48px 56px 64px 56px);
-  font: $fontExtraLarge;
+  font: $fontExtraLargeDesktop;
   color: $black;
 
-  p {
-    margin: 0 0 0 0;
-  }
-  
   @include respond(mobile) {
     @include col100(0 24px 48px 24px);
     font: $fontExtraLargeMobile;
+  }
+
+  p {
+    margin: 0 0 0 0;
   }
 }
 
@@ -73,10 +73,10 @@
   grid-column-end: 21;
 
   @include col100(72px 56px 48px 56px);
-  font: $fontMain;
+  font: $fontMainDesktop;
 
   @include respond(mobile) {
     padding: 72px 24px 16px 24px;
-    font: $fontExtraSmall;
+    font: $fontSmallDesktop;
   }
 }

@@ -1,12 +1,20 @@
 @import "colors";
 
-$fontExtraSmall: 13pt/21pt 'KTR', 'PT Serif' Georgia, serif;
-$fontMain: 14pt/22pt 'KTR', 'PT Serif' Georgia, serif;
-$fontLarge: 24pt/34pt 'KTR', 'PT Serif', Georgia, serif;
-$fontExtraLarge: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
+$fontSmallDesktop: 13pt/20pt 'KTR', 'PT Serif', Georgia, serif;
+$fontSmallDesktopItalic: 12pt/18pt 'KTRI', 'PT Serif', Georgia, serif;
+$fontSmallMobile: 12pt/18pt 'KTR', 'PT Serif', Georgia, serif;
+$fontSmallMobileItalic: 12pt/18pt 'KTRI', 'PT Serif', Georgia, serif;
 
+$fontMainDesktop: 14pt/22pt 'KTR', 'PT Serif', Georgia, serif;
+$fontMainDesktopItalic: 14pt/22pt 'KTRI', 'PT Serif', Georgia, serif;
+$fontMainMobile: 13pt/1.5em 'KTR', 'PT Serif', Georgia, serif;
+
+$fontLargeDesktop: 24pt/34pt 'KTR', 'PT Serif', Georgia, serif;
+$fontLargeDesktopItalic: 24pt/34pt 'KTRI', 'PT Serif', Georgia, serif;
+
+$fontExtraLargeDesktop: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
+$fontExtraLargeDesktopItalic: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
 $fontExtraLargeMobile: 19pt/1.3em 'KTR', 'PT Serif', Georgia, serif;
-$fontMainMobile: 12pt/1.5em 'KTR', 'PT Serif' Georgia, serif;
 
 a {
   color: $blue;
@@ -14,21 +22,21 @@ a {
 }
 
 h1 {
-  font: $fontExtraLarge;
+  font: $fontExtraLargeDesktop;
   margin: 0 0 20px 0;
   
   @include respond(mobile) {
-    font: $fontLarge;
+    font: $fontLargeDesktop;
     margin: 0 0 16px 0;
   }
 }
 
 h2 {
-  font: $fontLarge;
+  font: $fontLargeDesktop;
   margin: 24px 0 16px 0;
 
   @include respond(mobile) {
-    font: $fontLarge;
+    font: $fontLargeDesktop;
     margin: 0 0 16px 0;
   }
 }

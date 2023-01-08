@@ -1,6 +1,9 @@
-mixin audioCard(name, audio, source, href, target="_self")
-    a(href=href, target=target).audio-card
-        div.audio-card__content
-            div.audio-card__content-name=name
-            div.audio-card__content-audio=audio
-        div.audio-card__source=source
+mixin audioCard(id, mode)
+    div(class=`audio-card audio-card${mode}`, href="#")
+            div(class=`audio-card__cover audio-card${mode}__cover`)
+                img(src=`http://soshnikov.space/img/${id}.jpg`)
+            div.audio-card__description
+                if block
+                    block
+                else
+                    p No way

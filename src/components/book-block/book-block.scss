@@ -1,5 +1,5 @@
 .book-block {
-    font: $fontMain;
+    font: $fontMainDesktop;
 
     &30 {
         @include col30(0 5% 3% 0, column);
@@ -56,11 +56,11 @@
 
     &__desc {
         @include col100(0);
-        font: $fontMain;
+        font: $fontSmallDesktop;
 
         @include respond(mobile) {
             @include col100(0 0 32px 0);
-            font: $fontMainMobile;
+            font: $fontSmallMobile;
         }
     }
 
@@ -71,17 +71,5 @@
            @include col100(0 24px);
         }
         
-    }
-
-    &__button {
-        @include colauto(8px 0 10px 0);
-        font: $fontMain;
-        line-height: 1;
-        color: $blue !important;
-        padding: 0;
-
-        @include respond(mobile) {
-            font: $fontExtraSmall;
-        }
     }
 }

@@ -1,9 +1,9 @@
 .article-breadcrumb {
   @include col100(0 0 16px 0);
-  font: $fontMain;
+  font: $fontMainDesktop;
 
   @include respond(mobile) {
-    font: $fontMain;
+    font: $fontMainDesktop;
   }
   
   &__link {

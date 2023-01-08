@@ -1,6 +1,6 @@
-mixin bookCard(name, book, source, href, target="_self")
+mixin bookCard(name, book, source, href, mode="article", target="_self")
     a(href=href, target=target).book-card
         div.book-card__content
             div.book-card__content-name=name
-            div.book-card__content-book=book
+            div(class=`book-card__content-book book-card__content-book-${mode}`)=book
         div.book-card__source=source

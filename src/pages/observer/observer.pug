@@ -1,8 +1,7 @@
 include ../../components/head/head
 include ../../components/header/header
-include ../../components/article-headline/article-headline
-include ../../components/audio-block/audio-block
-
+include ../../components/audio-card/audio-card
+include ../../components/book-card/book-card
 
 doctype html
 html
@@ -18,51 +17,44 @@ body.body_light
         div.profile__title
             h2 Наблюдатель
         div.profile__annotation
-            p Антон работает в Петербурге менеджером IT-компании и вполне доволен жизнью. Только вот у жизни на него свои планы: во время очередной командировки Антон умирает. Однако на этом его земной путь не заканчивается: Антон становится наблюдателем — мертвым в мире людей, обязанным следить за давно установившимся порядком.
-            p Каждый человек проходит путь от рождения до гроба. Но кто сказал, что это финал? Кто сказал, что смерть нельзя преодолеть?
+            p Петербург, 2019-й год. Менеджер крупного IT-холдинга Антон Приморский идёт на повышение — он становится директором небольшого стартапа в сфере цифрового образования. Холдинг отправляет его в городок Коммунар-на-Волге договариваться с региональным Минобром об участии в тендере. Антон готовится окунуться в атмосферу грубости, безысходности и кумовства, однако, на месте его подстерегают трудности совершенно иного рода — настолько судьбоносные, что коррумпированность чиновников покажется ему сущей мелочью.
         div.profile__cover
             img(src="http://soshnikov.space/img/observer-cover.jpg")
         div.profile__connotation-title#connotation
             h2 Текст на Букмейте
         div.profile__connotation-contents
-            div.profile__connotation-section
-                a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=1&episode_uuid=v8JDGYa0') Эпизод 1. На краю
-                a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=2&episode_uuid=NzIIIbkV') Эпизод 2. Поворот не туда
-                a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=3&episode_uuid=hEXqQtGG') Эпизод 3. Свежий труп
-                a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=4&episode_uuid=XeLjcqvX') Эпизод 4. Умер — наблюдай
-                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 5. Доживут не все, 11.01
-                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 6. По ту сторону смерти, 18.01
-                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 7. Из плоти и крови, 25.01
-                a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 8. Post mortem, 01.02
+            a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=1&episode_uuid=v8JDGYa0') Эпизод 1. На краю
+            a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=2&episode_uuid=NzIIIbkV') Эпизод 2. Поворот не туда
+            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=3&episode_uuid=hEXqQtGG') Эпизод 3. Свежий труп
+            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=4&episode_uuid=XeLjcqvX') Эпизод 4. Умер — наблюдай
+            a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 5. Доживут не все, 11.01
+            a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 6. По ту сторону смерти, 18.01
+            a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 7. Из плоти и крови, 25.01
+            a.profile__connotation-link.profile__connotation-link_disabled(href='https://bookmate.ru/serials/V7WBmCes') Эпизод 8. Post mortem, 01.02
         div.profile__audio-title#audio
             h2 Аудиоверсия
         div.profile__audio-contents
-            div.profile__audio-section
-                +audioBlock(
-                    'observer-audio',
-                    '«Наблюдатель» на Я.Музыке',
-                    '',
-                    'https://music.yandex.ru/album/24421832',
-                    'Слушать онлайн',
-                    '50'
-                )
-                +audioBlock(
-                    'observer-audio',
-                    '«Наблюдатель» на Букмейте',
-                    '',
-                    'https://bookmate.ru/series/hnjawCJC',
-                    'Слушать онлайн',
-                    '50'
-                )
-        div.profile__materials-title#materials
-            h2 Материалы
-        div.profile__materials-contents
-            div.profile__materials-section
-                +audioBlock(
-                    'observer-soundtrack',
-                    'Саундтрек сериала на Spotify',
-                    '',
-                    'https://open.spotify.com/playlist/1q6lXXAw694diuON9W7DK4?si=9435988cfb6f46b4',
-                    'Слушать',
-                    '50'
-                )
+            +audioCard(
+                'observer-audio',
+                '50')
+                p.audio-card__info
+                    | Читает Александр Скиданов
+                    br
+                    | 2 часа 45 минут
+                    br
+                    | Если вам меньше 18 лет, то атата
+                p.audio-card__links
+                    |
+                    a(href="https://music.yandex.ru/album/24421832") Слушать на Яндекс.Музыке
+                    a(href="https://bookmate.ru/series/hnjawCJC") Слушать на Букмейте
+        div.profile__review-title#review
+            h2 Рецензии и статьи
+        div.profile__review-contents
+            +bookCard(
+                'Елена Васильева, «Живой Труп»',
+                '«Где проходит граница между мертвым и живым, живы или мертвы мы на самом деле — вопросы философские, но Сошников не пускается в длительные объяснения, подобно Елизарову в “Земле”…»',
+                'Прочтение',
+                'https://prochtenie.org/reviews/30847',
+                'review',
+                'blank'
+            )

@@ -1,11 +1,17 @@
 .book-card {
-  @include col100(18px 24px 18px 24px, row, space-between);
-  font: $fontMain;
+  @include col100(16px 0, row, space-between);
+  font: $fontMainDesktop;
   border-bottom: 1px solid darken($white, 10%);
   
   @include respond(mobile) {
     @include col100(16px 8px 16px 0, column);
-  } 
+    font: $fontMainMobile;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    margin: 0 0 24px 0;
+  }
 
   &:hover {
     background-color: darken($white, 3%);
@@ -28,34 +34,43 @@
       color: $blue;
 
       @include respond(mobile) {
-        font: $fontMain;
+        font: $fontMainMobile;
         line-height: 1.5;
       }
     }
 
     &-book {
-      margin-top: 8px; 
-      font: $fontMain;
+      margin-top: 4px;
+      font: $fontSmallDesktop;
       color: $black;
 
       @include respond(mobile) {
         @include col100(0, column);
-        font: $fontExtraSmall;
+        font: $fontSmallMobile;
+        margin-top: 8px;
+      }
+
+      &-review {
+        font: $fontMainDesktopItalic;
+
+        @include respond(mobile) {
+          font: $fontSmallMobileItalic;
+        }
       }
     }
   }
   
   &__source {
-    font: $fontMain;
+    font: $fontSmallDesktop;
     color: $black;
 
     @include respond(mobile) {
-      font: $fontExtraSmall;
+      font: $fontSmallMobile;
       color: lighten($black, 50%);
       text-transform: lowercase;
       font-variant: small-caps;
       letter-spacing: 1px;
-      margin-top: 16px;
+      margin-top: 8px;
     }
   }
 }

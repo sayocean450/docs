@@ -6,11 +6,11 @@
 
     @include col80(64px 32px 24px 56  px, column);
     color: $black;
-    font: $fontExtraLarge;
+    font: $fontExtraLargeDesktop;
 
     @include respond(mobile) {
       @include col100(16px 24px 24px 24px, column);
-      font: $fontMain;
+      font: $fontMainDesktop;
     }
   }
 }

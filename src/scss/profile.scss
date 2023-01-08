@@ -1,8 +1,8 @@
 .profile {
   display: grid;
   grid-template-columns: auto 10% auto 10% 15%;
-  grid-template-rows: auto 64px auto;
-  padding: 0 56px;
+  grid-template-rows: auto 48px auto;
+  padding: 24px 56px 0 56px;
   
   @include respond(mobile) {
     grid-template-columns: 100%;
@@ -14,21 +14,25 @@
     grid-column-start: 1;
     grid-row-start: 1;
 
+    @include respond(mobile) {
+      grid-row-start: 2;
+    }
+
     h2 {
-      margin: 0 0 0 0;
+      margin: 0;
     }
   }
   
   &__annotation {
     grid-column-start: 3;
     grid-row-start: 1;
-    font: $fontMain;
+    font: $fontMainDesktop;
     padding-top: 8px;
     
     @include respond(mobile) {
-      font: $fontExtraSmall;
+      font: $fontMainMobile;
       grid-column-start: 1;
-      grid-row-start: 2;
+      grid-row-start: 3;
       margin: 0 0 24px 0;
     }
   }
@@ -40,18 +44,29 @@
     @include col100(0, column);
     
     @include respond(mobile) {
-      display: none;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      @include col100(0 0 24px 0, column);
     }
     
     img {
       width: 100%;
+
+      @include respond(mobile) {
+        width: 33%;
+      }
     }
   }
   
   &__connotation {
+
     &-title {
       grid-column-start: 1;
       grid-row-start: 3;
+
+      @include respond(mobile) {
+        grid-row-start: 4;
+      }
 
       h2 {
         margin-top: 0;
@@ -62,17 +77,13 @@
       grid-column-start: 3;
       grid-row-start: 3;
 
-      @include respond(mobile) {
-        font: $fontExtraSmall;
-        grid-column-start: 1;
-        grid-row-start: 4;
-      }
-    }
-
-    &-section {
       @include col100(0 0 48px 0, column);
 
       @include respond(mobile) {
+        font: $fontMainMobile;
+        grid-column-start: 1;
+        grid-row-start: 5;
+
         @include col100(0 0 16px 0, column);
       }
     }
@@ -80,7 +91,7 @@
     &-link {
       color: $blue;
       background-image: linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 1px, $blue 1px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 100px);
-      font: $fontLarge;
+      font: $fontLargeDesktop;
       margin-bottom: 12px;
       
       &_disabled {
@@ -90,67 +101,64 @@
       }
       
       @include respond(mobile) {
-        font: $fontMain;
+        font: $fontMainDesktop;
       }
     }
   }
 
   &__audio {
+
     &-title {
       grid-column-start: 1;
-      grid-row-start: 4;
-
-      h2 {
-        margin-top: 0;
-      }
-
-      @include respond(mobile) {
-        grid-column-start: 1;
-        grid-row-start: 5;
-      }
-    }
-
-    &-contents {
-      grid-column-start: 3;
       grid-row-start: 4;
 
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 6;
       }
-    }
-
-    &-section {
-      @include col100(0 0 48px 0, row, space-between);
-
-      @include respond(mobile) {
-        @include col100(0 0 16px 0, column);
-      }
-    }
-  }
-
-  &__materials {
-    &-title {
-      grid-column-start: 1;
-      grid-row-start: 5;
 
       h2 {
         margin-top: 0;
-      }
-
-      @include respond(mobile) {
-        grid-column-start: 1;
-        grid-row-start: 7;
       }
     }
 
     &-contents {
       grid-column-start: 3;
+      grid-row-start: 4;
+      @include col100(0 0 48px 0, row, space-between);
+
+      @include respond(mobile) {
+        grid-column-start: 1;
+        grid-row-start: 7;
+        @include col100(0 0 16px 0, column);
+      }
+    }
+  }
+
+  &__review {
+
+    &-title {
+      grid-column-start: 1;
       grid-row-start: 5;
 
       @include respond(mobile) {
         grid-column-start: 1;
         grid-row-start: 8;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+
+    &-contents {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 6;
+
+      @include respond(mobile) {
+        grid-column-start: 1;
+        grid-row-start: 9;
       }
     }
 

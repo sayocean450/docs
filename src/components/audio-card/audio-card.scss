@@ -1,61 +1,55 @@
-.book-card {
-  @include col100(18px 24px 18px 24px, row, space-between);
-  font: $fontMain;
-  border-bottom: 1px solid darken($white, 10%);
-  
-  @include respond(mobile) {
-    @include col100(16px 8px 16px 0, column);
-  } 
-
-  &:hover {
-    background-color: darken($white, 3%);
-    transition: 0.2s;
-  }
-  
-  &__content {
-    @include col50(0, column);
+.audio-card {
+    @include colauto(0);
+    font: $fontMainDesktop;
 
     @include respond(mobile) {
-      @include col100(0, column);
-      color: $blue;
+        @include col100(0 0 8px 0, column);
+        font: $fontMainMobile;
     }
 
-    h3 {
-      margin: 0;
+    &__cover {
+        margin: 0 0 8px 0;
+
+        img {
+            width: 100%;
+            height: auto;
+
+            @include respond(mobile) {
+                //width: 50%;
+            }
+        }
     }
 
-    &-name {
-      color: $blue;
+    &__description {
+        @include col100(0 0 0 24px, column);
 
-      @include respond(mobile) {
-        font: $fontMain;
-        line-height: 1.5;
-      }
+        @include respond(mobile) {
+            @include col100(0, column);
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
     }
 
-    &-book {
-      margin-top: 8px; 
-      font: $fontMain;
-      color: $black;
+    &__info {
+        font: $fontSmallDesktop;
 
-      @include respond(mobile) {
+        @include respond(mobile) {
+            font: $fontSmallMobile;
+        }
+    }
+
+    &__links {
         @include col100(0, column);
-        font: $fontExtraSmall;
-      }
-    }
-  }
-  
-  &__source {
-    font: $fontMain;
-    color: $black;
 
-    @include respond(mobile) {
-      font: $fontExtraSmall;
-      color: lighten($black, 50%);
-      text-transform: lowercase;
-      font-variant: small-caps;
-      letter-spacing: 1px;
-      margin-top: 16px;
+        @include respond(mobile) {
+           @include col100(0, column);
+        }
+
+        a {
+            color: $blue;
+            margin: 0 0 4px 0;
+        }
     }
-  }
 }
