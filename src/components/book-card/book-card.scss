@@ -4,8 +4,12 @@
   border-bottom: 1px solid darken($white, 10%);
   
   @include respond(mobile) {
-    @include col100(16px 8px 16px 0, column);
+    @include col100(16px 0 16px 0, column);
     font: $fontMainMobile;
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
   &:last-child {
@@ -56,6 +60,10 @@
         @include respond(mobile) {
           font: $fontSmallMobileItalic;
         }
+      }
+
+      &-blank {
+        margin: 0;
       }
     }
   }

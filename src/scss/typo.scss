@@ -11,6 +11,7 @@ $fontMainMobile: 13pt/1.5em 'KTR', 'PT Serif', Georgia, serif;
 
 $fontLargeDesktop: 24pt/34pt 'KTR', 'PT Serif', Georgia, serif;
 $fontLargeDesktopItalic: 24pt/34pt 'KTRI', 'PT Serif', Georgia, serif;
+$fontLargeMobile: 20pt/24pt 'KTR', 'PT Serif', Georgia, serif;
 
 $fontExtraLargeDesktop: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
 $fontExtraLargeDesktopItalic: 40pt/50pt 'KTR', 'PT Serif', Georgia, serif;
@@ -36,7 +37,7 @@ h2 {
   margin: 24px 0 16px 0;
 
   @include respond(mobile) {
-    font: $fontLargeDesktop;
+    font: $fontLargeMobile;
     margin: 0 0 16px 0;
   }
 }
@@ -45,6 +46,10 @@ h3 {
   font: 16px;
   font-weight: bold;
   margin: 0 0 12px 0;
+}
+
+i, em {
+  font-family: 'KTRI';
 }
 
 @font-face {
