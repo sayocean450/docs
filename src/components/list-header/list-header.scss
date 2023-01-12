@@ -3,7 +3,7 @@
 @import "../../scss/typo";
 
 .list-header {
-  @include col100(48px 0 0 24px, row);
+  @include col100(48px 56px 0 56px, row);
   word-break: break-word;
   color: $black;
   

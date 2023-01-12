@@ -59,7 +59,7 @@ ol {
   grid-column-start: 1;
   grid-column-end: 21;
 
-  @include col100(0 32px 32px 32px);
+  @include col100(0 32px 0 32px);
 
   @include respond(mobile) {
     @include col100(8px 24px 16px 24px);
@@ -69,7 +69,7 @@ ol {
 .list {
   grid-column-start: 1;
   grid-column-end: 21;
-  @include col100(0 56px, column);
+  @include col100(0, column);
 
   @include respond(mobile) {
     @include col100(0 24px, column);

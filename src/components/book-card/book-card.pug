@@ -1,5 +1,5 @@
 mixin bookCard(name, book, source, href, mode="article", target="_self")
-    a(href=href, target=target).book-card
+    a(href=href, target=target, class=`book-card book-card__${mode}`)
         div.book-card__content
             div.book-card__content-name=name
             div(class=`book-card__content-book book-card__content-book-${mode}`)=book
