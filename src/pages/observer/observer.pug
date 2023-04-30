@@ -2,12 +2,14 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/audio-card/audio-card
 include ../../components/book-card/book-card
+include ../../components/book-block/book-block
+include ../../components/button/button
 
 doctype html
 html
     +head(
       'Артём Сошников — Наблюдатель',
-      'Книжный сериал на Букмейте, первый IT-триллер русской прозы по версии человека, который его написал))',
+      'Книжный сериал на Букмейте, IT-триллер',
       'http://soshnikov.space/img/observer-og.jpg',
       'story'
     )
@@ -18,37 +20,13 @@ body.body_light
             h2 Наблюдатель
         div.profile__annotation
             p Петербург, 2019-й год. Менеджер крупного IT-холдинга Антон Приморский идёт на повышение — он становится директором небольшого стартапа в сфере цифрового образования. Холдинг отправляет его в городок Коммунар-на-Волге договариваться с региональным Минобром об участии в тендере. Антон готовится окунуться в атмосферу грубости, безысходности и кумовства, однако, на месте его подстерегают трудности совершенно иного рода — настолько судьбоносные, что коррумпированность чиновников покажется ему сущей мелочью.
+            p.profile__annotation-buttons
+                +button('primary', 'Читать на Букмейте', '#')
+                +button('secondary', 'Слушать на Я.Музыке', '#')
         div.profile__cover
             img(src="http://soshnikov.space/img/observer-cover.jpg")
-        div.profile__connotation-title#connotation
-            h2 Текст на Букмейте
-        div.profile__connotation-contents
-            a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=1&episode_uuid=v8JDGYa0') Эпизод 1. На краю
-            a.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=2&episode_uuid=NzIIIbkV') Эпизод 2. Поворот не туда
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=3&episode_uuid=hEXqQtGG') Эпизод 3. Свежий труп
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=4&episode_uuid=XeLjcqvX') Эпизод 4. Умер — наблюдай
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=5&episode_uuid=hElgsz9S') Эпизод 5. Доживут не все
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=6&episode_uuid=nq8tTUg5') Эпизод 6. По ту сторону смерти
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=7&episode_uuid=SFVLifNv') Эпизод 7. Из плоти и крови
-            a.profile__connotation-link.profile__connotation-link(href='https://bookmate.ru/reader/V7WBmCes?resource=serial&episode=8&episode_uuid=eagtDhEA') Эпизод 8. Post mortem
-        div.profile__audio-title#audio
-            h2 Аудиоверсия
-        div.profile__audio-contents
-            +audioCard(
-                'observer-audio',
-                '50')
-                p.audio-card__info
-                    | Читает Александр Скиданов
-                    br
-                    | 2 часа 45 минут
-                    br
-                    | Если вам меньше 18 лет, то атата
-                p.audio-card__links
-                    |
-                    a(href="https://music.yandex.ru/album/24421832") Слушать на Яндекс.Музыке
-                    a(href="https://bookmate.ru/series/hnjawCJC") Слушать на Букмейте
         div.profile__review-title#review
-            h2 Рецензии и статьи
+            h2 Рецензии
         div.profile__review-contents
             +bookCard(
                 'Елена Васильева, «Живой Труп»',
@@ -58,3 +36,29 @@ body.body_light
                 'review',
                 'blank'
             )
+        div.profile__another-title#another
+            h2 Нет подписки «Яндекс.Плюс»?
+            p Не беда — почитайте другие мои произведения, который доступны бесплатно на сайте:
+        div.profile__another-contents
+            div.read-first__content
+                +bookBlock(
+                    'korpisaari',
+                    'Остров глухого леса',
+                    'Реалистический рассказ, написанный во время индивидуальной резиденции в Переделкине',
+                    'korpisaari.html',
+                    '30'
+                )
+                +bookBlock(
+                    'selfie',
+                    'Вот мои селфи',
+                    'Цикл ироничной прозы о мальчике Тёме и его детстве в криминальном городе девяностых',
+                    'selfie.html',
+                    '30'
+                )
+                +bookBlock(
+                    'misfortunes',
+                    'Рассказы разных бед',
+                    'Строгая реалистическая проза о людях, их демонах и окружающей нас боли. Часть рассказов выходила в зине «Бетон»',
+                    'misfortunes.html',
+                    '30'
+                )
