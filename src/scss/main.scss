@@ -53,6 +53,10 @@ ol {
       @include col100(16px 24px 0 24px, column);
     }
   }
+
+  &__tabs {
+    margin: 0 0 24px 0;
+  }
 }
 
 .tabs {

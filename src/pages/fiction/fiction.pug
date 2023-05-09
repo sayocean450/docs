@@ -1,0 +1,195 @@
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'Артём Сошников • Повести и рассказы',
+      '',
+      'http://soshnikov.space/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'writing')
+    div.content
+        +pageHeadline('Проза')
+        div.stories__content
+            +bookBlock(
+                'reflection',
+                'Отражение в луже (2023)',
+                'В конце сентября молодой писатель Борис наспех улетает в Стамбул. В Турции он начинает вести телеграм-канал, описывая свои чувства и впечатления',
+                'reflection.html',
+                '30'
+            )
+            +bookBlock(
+                'observer',
+                'Наблюдатель (2022)',
+                'Продуктовый директор IT-стартапа Антон отправляется в командировку и сталкивается с нехилыми проблемами',
+                'observer.html',
+                '30'
+            )
+            +bookBlock(
+                'inside',
+                'Инсайд (2018)',
+                'Два авантюриста вместе с полусумасшедшим доцентом заводят фейковый инсайдерский телеграм-канал о современной политике',
+                'observer.html',
+                '30'
+            )
+        div.list
+            +list-header('Рассказы', 'dark')
+            +bookCard(
+                'Остров глухого леса',
+                '',
+                'Прочтение',
+                'korpisaari.html',
+                'blank'
+            )
+            +bookCard(
+                'Опёнок',
+                '',
+                '',
+                'openok.html',
+                'blank'
+            )
+            +bookCard(
+                'Дни локальной жизни',
+                '',
+                'Colta',
+                'https://www.colta.ru/articles/molodaya_rossiya/29414-artem-soshnikov-dni-lokalnoy-zhizni',
+                'blank'
+            )
+                +bookCard(
+                    'Порадуй своего гуманоида',
+                    '',
+                    'Dutch Rudder',
+                    'simulation.html',
+                    'blank'
+                )
+            +bookCard(
+                'Витрины',
+                '',
+                '',
+                'shop-windows.html',
+                'blank'
+            )
+            +bookCard(
+                'Купе',
+                '',
+                'Бетон',
+                'coupe.html',
+                'blank'
+            )
+            +bookCard(
+                'Гробы',
+                '',
+                'Бетон',
+                'coffins.html',
+                'blank'
+            )
+            +bookCard(
+                'Дайте мне умереть',
+                '',
+                'Скобы',
+                'let-me-die.html',
+                'blank'
+            )
+            +bookCard(
+                'Вингер',
+                '',
+                '',
+                'winger.html',
+                'blank'
+            )
+            +bookCard(
+                'Верблюд',
+                '',
+                '',
+                'camel.html',
+                'blank'
+            )
+            +bookCard(
+                'Уроборос',
+                '',
+                '',
+                'ouroboros.html',
+                'blank'
+            )
+        div.list
+            +list-header('«Вот мои селфи»', 'dark')
+            +bookCard(
+                'Клок',
+                '',
+                '',
+                'selfie-clump.html',
+                'blank'
+            )
+            +bookCard(
+                'Костюм',
+                '',
+                '',
+                'selfie-tracksuit.html',
+                'blank'
+            )
+            +bookCard(
+                'Эстафеты',
+                '',
+                '',
+                'selfie-relay-race.html',
+                'blank'
+            )
+            +bookCard(
+                'Ни пацан, ни мацан',
+                '',
+                '',
+                'selfie-not-chav.html',
+                'blank'
+            )
+            +bookCard(
+                'Парк',
+                '',
+                '',
+                'selfie-park.html',
+                'blank'
+            )
+            +bookCard(
+                'Пакет',
+                '',
+                '',
+                'selfie-bag.html',
+                'blank'
+            )
+            +bookCard(
+                'Роспечать',
+                '',
+                '',
+                'selfie-rospechat.html',
+                'blank'
+            )
+            +bookCard(
+                'Дебют',
+                '',
+                '',
+                'selfie-debut.html',
+                'blank'
+            )
+            +bookCard(
+                'Инопланетянин',
+                '',
+                '',
+                'selfie-alien.html',
+                'blank'
+            )
+            +bookCard(
+                'Классика',
+                '',
+                '',
+                'selfie-classic.html',
+                'blank'
+            )
+
