@@ -1,8 +1,4 @@
 .articles {
-  &__tabs {
-    grid-row-start: 2;
-  }
-
   &__content {
     grid-row-start: 3;
     grid-column-start: 1;
@@ -17,6 +13,7 @@
     }
 
     &_cherry {
+      grid-row-start: 2;
       margin: 48px 0 32px 0;
       font-family: 'KTRI';
     }
