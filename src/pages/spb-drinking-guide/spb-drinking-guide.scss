@@ -2,8 +2,17 @@
     padding: 16px 24px;
     background-color: #dbf0dd;
     border-radius: 6px;
+    font: $fontMainDesktopItalic;
+
+    @include respond(mobile) {
+        font: $fontMainMobileItalic;
+    }
 }
 
 .map {
     margin-top: 24px;
+
+    @include respond(mobile) {
+        margin-bottom: 24px;
+    }
 }
