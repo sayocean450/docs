@@ -25,6 +25,13 @@
 			&:last-of-type {
 				display: none;
 			}
+
+			img {
+				display: block;
+				margin-bottom:8px;
+				width: 100%;
+				border-radius: 8px;
+			}
 		}
 
 		h2 {
