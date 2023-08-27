@@ -15,7 +15,7 @@ body.body_light
     +header()
     div.story
         div.story__content
-            +article-breadcrumb('рассказы разных бед', 'misfortunes')
+            //+article-breadcrumb('рассказы разных бед', 'misfortunes')
             include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/writing/stories/misfortunes/shop-windows.md
             div.story__next
                 a(href="misfortunes.html#connotation") ← вернуться в содержание
