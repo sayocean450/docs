@@ -8,8 +8,8 @@ include ../../components/pagination/pagination
 doctype html(prefix="og: http://ogp.me/ns#")
 html
     +head(
-      'Артём Сошников • Статьи и рецензии',
-      'Все нехудожественные тексты в хронологическом порядке',
+      'Артём Сошников • Обзоры',
+      'Обзоры на книги в хронологическом порядке',
       'http://soshnikov.space/img/default.jpg',
       ''
     )
@@ -18,6 +18,28 @@ body.body_dark
     div.content
         +pageHeadline('Статьи')
         div.list
+            +list-header('2023', 'dark')
+            +bookCard(
+                '',
+                'Алексей Сальников, «Оккультрегер»',
+                '',
+                'salnikov-okkultreger.html',
+                'blank'
+            )
+            +bookCard(
+                'Левой! Левой!',
+                'Булат Ханов, «Ибупрофен»',
+                '',
+                'khanov-ibuprofen.html',
+                'blank'
+            )
+            +bookCard(
+                'Антон натренировался',
+                'Антон Секисов, «Комната Вагинова»',
+                '',
+                'sekisov-vaginov.html',
+                'blank'
+                )
             +list-header('2022', 'dark')
             +bookCard(
                 'Я не то что привык — я люблю',
@@ -219,83 +241,4 @@ body.body_dark
                 '',
                 'mikhalik-comet.html',
                 'article'
-            )
-            +bookCard(
-                'Селеба за решёткой',
-                'Олег Навальный, «Три с половиной. С арестантским уважением и братским теплом»',
-                '',
-                'navalny-three-and-a-half.html',
-                'article'
-            )
-            +bookCard( 
-                'Справитесь и вы',
-                'Наталия Мещининова, «Рассказы»',
-                '',
-                'meshchaninova-stories.html',
-                'article'
-            )
-            +bookCard(
-                'Балет рабочего класса',
-                'Саймон Кричли, «О чем мы думаем, когда думаем о футболе»',
-                '',
-                'critchley-football.html',
-                'article'
-            )
-            +bookCard(
-                'Апостол юга Петербурга',
-                'Ксения Букша, «Открывается внутрь»',
-                '',
-                'buksha-is-opened-inside.html',
-                'article'
-            )
-            +bookCard(
-                'Страх неизбежен',
-                'Саймон Кричли, «Книга мёртвых философов»',
-                '',
-                'critchley-dead-sophists.html',
-                'article'
-            )
-            +bookCard(
-                'Игнор сборника на книжной полке',
-                'Сергей Носов, «Построение квадрата на шестом уроке»',
-                '',
-                'nosov-square.html',
-                'article'
-            )
-            +bookCard(
-                'Отдел',
-                'Алексей Сальников, «Отдел»',
-                '',
-                'salnikov-department.html',
-                'article'
-            )
-            +bookCard( 
-                'Обновление Сенчина',
-                'Роман Сенчин, «Квартирантка с двумя детьми»',
-                '',
-                'senchin-tenant.html',
-                'article'
-            )
-            +bookCard(
-                'Такие выборы нам не нужны',
-                'Давид ван Рейбрук, «Против выборов»',
-                '',
-                'van-reybrouck-against-elections.html',
-                'article'
-            )
-            +bookCard(
-                'Личное мнение: зачем читать романы',
-                '',
-                'Кот Бродского',
-                'http://kotbrodskogo.ru/articles/post/117-lichnoe-mnenie-zachem-chitat-romany',
-                'article',
-                'blank'
-            )
-            +bookCard(
-                'Лев Данилкин — «Ленин». Обзор от Артёма Сошникова',
-                'Лев Данилкин «Ленин. Пантократор солнечных пылинок»',
-                'Кот Бродского',
-                'http://kotbrodskogo.ru/articles/post/117-lichnoe-mnenie-zachem-chitat-romany',
-                'article',
-                'blank'
             )
