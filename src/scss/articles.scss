@@ -1,0 +1,59 @@
+.articles {
+	&__content {
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-column-end: 21;
+
+		@include col50(0px 56px 0 56px, column);
+		color: $black;
+		font: $fontMainDesktop;
+
+		p {
+			margin: 0;
+		}
+
+		&_cherry {
+			grid-row-start: 2;
+			margin: 48px 0 32px 0;
+			font: $fontMainDesktopItalic;
+		}
+
+		@include respond(mobile) {
+			@include col100(24px 24px 24px 24px, column);
+			font: $fontMainDesktop;
+		}
+	}
+}
+
+
+.related-articles {
+	@include col100(0, column);
+
+	&__row {
+		@include col100(0, row, space-between);
+
+		@include respond(mobile) {
+			@include col100(0, column);
+		}
+
+		div {
+			margin-right: 8px;
+
+			@include respond(mobile) {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			color: $black;
+		}
+
+		&-col {
+			@include col30(0);
+		}
+	}
+
+	h2 {
+		margin: 24px 0;
+	}
+}

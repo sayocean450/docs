@@ -87,6 +87,12 @@ ol {
 blockquote {
   color: darken($blue, 16%);
   margin: 8px 0;
+  font: $fontMainDesktopItalic;
+  font-style: italic;
+
+  p {
+    display: flex !important;
+  }
   
   @include respond(mobile) {
     margin: 4px 12px;

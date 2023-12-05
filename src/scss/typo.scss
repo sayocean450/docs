@@ -50,7 +50,7 @@ h3 {
 }
 
 i, em {
-  font-family: 'KTRI';
+  font-family: 'KTRI', serif;
 }
 
 @font-face {
@@ -90,5 +90,5 @@ i, em {
   url('../fonts/ktri.woff2') format('woff2'),
   url('../fonts/ktri.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
