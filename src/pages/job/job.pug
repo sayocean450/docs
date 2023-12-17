@@ -1,0 +1,18 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Десять работ',
+      'Кто из рабочей среды, для того не секрет — с производств люди тащили всё, что не привинчено, а что привинчено — отвинчивали и тащили...',
+      'http://soshnikov.space/img/korpisaari-og.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/writing/stories/other/job.md
