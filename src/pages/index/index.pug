@@ -28,26 +28,26 @@ body.body_dark
         div.read-first
             +pageHeadline('Три лучших рассказа')
             div.read-first__content
-                +bookCard(
-                    'Остров глухого леса',
-                    '',
-                    '',
+                +bookBlock(
+                    'korpisaari',
+                    'Остров глухого леса (2022)',
+                    'История о программисте Ване, тяге к одиночеству, поиске спойкойствия, дружбе и судьбоносном выборе',
                     'korpisaari.html',
-                    'blank'
+                    '30'
                 )
-                +bookCard(
-                    'Город невозможности',
-                    '',
-                    '«Юность», №6, 2024',
+                +bookBlock(
+                    'city-of-impossibility',
+                    'Город невозможности (2024)',
+                    'Иногда так бывает: весна, зелень вовсю распускается на ветвях, днём градусов двадцать…',
                     'city-of-impossibility.html',
-                    'blank'
+                    '30'
                 )
-                +bookCard(
+                +bookBlock(
+                    'coupe',
                     'Купе',
-                    '',
-                    'Зин «Бетон», 2021',
+                    'Глеб вынужден находиться в одном купе с отцом-акоголиком, везя его в петербургский рехаб',
                     'coupe.html',
-                    'blank'
+                    '30'
                 )
                 div.read-first__button
                     +button('secondary', 'Читать все рассказы', 'stories.html')
