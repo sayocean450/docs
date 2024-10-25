@@ -3,7 +3,7 @@
     grid-column-start: 1;
     grid-column-end: 21;
 
-    @include col100(0 56px);
+    @include col100(0 72px);
     color: $black;
 
     @include respond(mobile) {
@@ -13,5 +13,9 @@
             font-size: 22px;
         }
         
+    }
+
+    h2 {
+        margin-bottom: 8px;
     }
 }

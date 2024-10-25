@@ -1,5 +1,6 @@
 include ../../components/book-block/book-block
 include ../../components/book-card/book-card
+include ../../components/button/button
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/list-header/list-header
@@ -18,96 +19,75 @@ body.body_dark
     div.content
         div.main-info
             p
-                | Пишу повести, рассказы и маленькие эссе, делюсь мыслями в
+                | Пишу рассказы и автофикшн-эссе, делюсь мыслями в
                 =" "
                 a(href="https://t.me/artem_soshnikov") телеграм-канале
                 |, веду вместе с Таней Млынчик подкаст о литературе «
                 a(href="https://writers.mave.digital/") Два авторских
                 |»
         div.read-first
-            +pageHeadline('Что почитать в первую очередь')
+            +pageHeadline('Три лучших рассказа')
             div.read-first__content
-                +bookBlock(
-                    'korpisaari',
+                +bookCard(
                     'Остров глухого леса',
-                    'Сказ о том, как программист из Архангельска дом искал',
+                    '',
+                    '',
                     'korpisaari.html',
-                    '30'
-                )
-                +bookBlock(
-                    'reflection',
-                    'Отражение в луже',
-                    'Молодой писатель Борис спешно улетает за границу с одним чемоданом. Там он начинает вести телеграм-канал, описывая свои чувства и впечатления',
-                    'reflection.html',
-                    '30'
-                )
-                +bookBlock(
-                    'observer',
-                    'Наблюдатель',
-                    'Книжный сериал для Букмейта. Продуктовый директор IT-стартапа Антон отправляется в командировку, где сталкивается с нехилыми проблемами',
-                    'observer.html',
-                    '30'
-                )
-        div.read-second
-            +pageHeadline('Материалы о писателях')
-            div.list
-                +bookCard(
-                    'Наблюдатель за поражёнными',
-                    'Незаслуженно забытый писатель-эмигрант Гайто Газданов жил в Париже, более двадцати лет работал ночным таксистом и считался главным конкурентом Набокова',
-                    '',
-                    'gazdanov.html',
-                    'article',
                     'blank'
                 )
                 +bookCard(
-                    'Любовь и горе в прозе Михаила Погодина',
-                    'Страдания крестьян, протофем-экшн и невозможность любви — в шести рассказах бывшего крепостного, доросшего до тайного советника Николая I',
+                    'Город невозможности',
                     '',
-                    'pogodin-stories.html',
+                    '«Юность», №6, 2024',
+                    'city-of-impossibility.html',
                     'blank'
                 )
                 +bookCard(
-                    'Отец русского пиара',
-                    'Фаддей Булгарин — первый русский пиарщик, бравший Москву в рядах армии Наполеона, агент Третьего отделения и цензор Пушкина',
+                    'Купе',
                     '',
-                    'bulgarin.html'
+                    'Зин «Бетон», 2021',
+                    'coupe.html',
+                    'blank'
                 )
-        div.read-third
-            +pageHeadline('Советую почитать')
-            div.list
-                +bookCard(
-                    'Вневременный Набоков',
-                    'Владимир Набоков, «Камера обскура»',
+                div.read-first__button
+                    +button('secondary', 'Читать все рассказы', 'stories.html')
+            +pageHeadline('Лучшие автофикшн-эссе')
+            div.read-first__content
+                //+bookCard(
+                    'Пой мне ещё',
                     '',
-                    'nabokov-camera-obscura.html',
+                    '',
+                    'splean.html',
+                    'blank'
+                //)
+                +bookCard(
+                    'Десять работ',
+                    '',
+                    '',
+                    'splean.html',
                     'blank'
                 )
                 +bookCard(
-                    '«Мне просто всё обрыдло»',
-                    'Борис Рыжий, «Роттердамский дневник»',
+                    'Погнутый телескоп',
                     '',
-                    'carrots-rotterdam.html',
+                    '',
+                    'splean.html',
                     'blank'
                 )
                 +bookCard(
-                    'Догоревший Петербург у меня из окна',
-                    'Татьяна Млынчик, «Ловля молний на живца»',
-                    'Прочтение',
-                    'https://prochtenie.org/reviews/30639',
-                    'blank'
-                )
-                +bookCard(
-                    'Поддаться, чтобы победить',
-                    'Булат Ханов, три романа',
+                    'Двенадцать лет спустя',
                     '',
-                    'khanov.html',
+                    '',
+                    'twelve-years-later.html',
                     'blank'
                 )
+                div.read-first__button
+                    +button('secondary', 'Читать все эссе', 'autofiction-esse.html')
         div.end 
             p
                 | Здесь больше ничего нет. Листайте наверх, посетите
                 =" "
-                a(href="fiction.html") раздел прозы
+                a(href="stories.html") раздел рассказов
                 |  или подпишитесь на
                 =" "
                 a(href="https://t.me/artem_soshnikov" target="blank") телеграм-канал

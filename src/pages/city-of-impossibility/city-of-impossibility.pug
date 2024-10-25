@@ -1,0 +1,18 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Город невозможности',
+      'Иногда так бывает: весна, зелень вовсю распускается на ветвях, днём градусов двадцать; Сева проходит мимо помятого уже объявления «Осторожно! Зона падения снега и льда!!!», но всё равно ёжится.',
+      'http://soshnikov.space/img/korpisaari-og.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/writing/stories/city-of-impossibility.md

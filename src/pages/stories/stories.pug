@@ -1,0 +1,59 @@
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'Артём Сошников • Рассказы',
+      '',
+      'http://soshnikov.space/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'writing')
+    div.content
+        +pageHeadline('Лучшие рассказы')
+        div.stories__content
+            +bookBlock(
+                'korpisaari',
+                'Остров глухого леса (2022)',
+                'История о программисте Ване, тяге к одиночеству, поиске спойкойствия, дружбе и судьбоносном выборе',
+                'korpisaari.html',
+                '30'
+            )
+            +bookBlock(
+                'city-of-impossibility',
+                'Город невозможности (2024)',
+                'Иногда так бывает: весна, зелень вовсю распускается на ветвях, днём градусов двадцать…',
+                'city-of-impossibility.html',
+                '30'
+            )
+        div.list
+            +list-header('Больше рассказов', 'dark')
+            +bookCard(
+                'Купе',
+                '',
+                '',
+                'coupe.html',
+                'blank'
+            )
+            +bookCard(
+                'Вингер',
+                '',
+                '',
+                'winger.html',
+                'blank'
+            )
+            +bookCard(
+                'Верблюд',
+                '',
+                '',
+                'camel.html',
+                'blank'
+            )

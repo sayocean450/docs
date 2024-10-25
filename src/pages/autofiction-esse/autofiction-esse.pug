@@ -1,0 +1,65 @@
+include ../../components/book-card/book-card
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'Артём Сошников • Автофикш-эссе',
+      'Размышления и воспоминания о прошлом, облечённые в художественную форму',
+      'http://soshnikov.space/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark')
+    div.content
+        +pageHeadline('Лучшие автофикшн-эссе')
+        div.stories__content
+            +bookBlock(
+                'job',
+                'Десять работ',
+                'Воспоминания о юности через призму десяти работ',
+                'korpisaari.html',
+                '30'
+            )
+            +bookBlock(
+                'violentia',
+                'Погнутый телескоп',
+                'Художественное эссе о насилии, волочащемся за мной по пятам',
+                'city-of-impossibility.html',
+                '30'
+            )
+        div.list
+            +list-header('Больше рассказов', 'dark')
+            +bookCard(
+                'Двенадцать лет спустя',
+                '',
+                '',
+                'twelve-years-later.html',
+                '_self'
+            )
+            +bookCard(
+                'Локти на столе (в день смерти Алена Делона)',
+                '',
+                '',
+                'elbows-on-the-table.html',
+                '_self'
+            )
+            +bookCard(
+                'Попытки увернуться от бумеранга',
+                '',
+                '',
+                'boomerang.html',
+                '_self'
+            )
+            +bookCard(
+                'Вот мои селфи',
+                '',
+                '',
+                'selfie.html',
+                '_self'
+            )

@@ -4,6 +4,7 @@
 .button {
   padding: 8px 16px 8px 16px;
   border-radius: 4px;
+  font: $fontSmallDesktop;
 
   @include respond(mobile) {
     @include col100(16px 24px, center, center);
@@ -23,11 +24,12 @@
   }
 
   &_secondary {
-    background-color: darken($white, 10%);
-    color: $black;
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $blue;
 
     &:hover {
-      background-color: darken($white, 20%);
+      background-color: lighten($blue, 45%);
     }
   }
 }

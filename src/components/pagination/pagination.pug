@@ -2,15 +2,15 @@ mixin pagination(activePage)
     div.pagination
         if activePage === 'all'
             a.pagination__year.pagination__year_active(href="articles.html") статьи
-            a.pagination__year(href="cherry-esse.html") черри-эссе
+            a.pagination__year(href="autofiction-esse.html") черри-эссе
         else if activePage === 'diary'
             a.pagination__year(href="articles.html") статьи
-            a.pagination__year.pagination__year_active(href="cherry-esse.html") черри-эссе
+            a.pagination__year.pagination__year_active(href="autofiction-esse.html") черри-эссе
 mixin writingTags(activePage)
     div.pagination
-        if activePage === 'fiction'
+        if activePage === 'stories'
             a.pagination__year(href="novelettes.html") повести
-            a.pagination__year.pagination__year_active(href="fiction.html") рассказы
+            a.pagination__year.pagination__year_active(href="stories.html") рассказы
         else
             a.pagination__year.pagination__year_active(href="novelettes.html") повести
-            a.pagination__year(href="fiction.html") рассказы
+            a.pagination__year(href="stories.html") рассказы
