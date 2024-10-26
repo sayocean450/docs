@@ -36,7 +36,7 @@
     flex-wrap: wrap;
 
     @include respond(mobile) {
-      @include col100(0 24px 24px 24px, column);
+      @include col100(0 24px 48px 24px, column);
     }
   }
 
