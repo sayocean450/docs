@@ -3,7 +3,7 @@
   grid-column-start: 1;
   grid-column-end: 21;
   
-  @include col80(48px 72px 64px 72px);
+  @include col80(48px 56px 64px 56px);
   font: $fontExtraLargeDesktop;
   color: $black;
 
@@ -41,7 +41,13 @@
   }
 
   &__button {
-    margin: 32px 16px 64px 16px;
+    grid-column-start: 1;
+    grid-column-end: 21;
+    @include col100(16px 0 0 0);
+
+    @include respond(mobile) {
+      @include col100(0);
+    }
   }
 }
 
@@ -55,6 +61,28 @@
 
   @include respond(mobile) {
     @include col100(24px 0 0 0, column);
+  }
+
+  &__content {
+    grid-column-start: 1;
+    grid-column-end: 21;
+
+    @include col100(0px 56px 0 56px, row);
+    flex-wrap: wrap;
+
+    @include respond(mobile) {
+      @include col100(0 24px 24px 24px, column);
+    }
+  }
+
+  &__button {
+    grid-column-start: 1;
+    grid-column-end: 21;
+    @include col100(16px 0 0 0);
+
+    @include respond(mobile) {
+      @include col100(0);
+    }
   }
 }
 

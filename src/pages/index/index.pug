@@ -30,14 +30,14 @@ body.body_dark
             div.read-first__content
                 +bookBlock(
                     'korpisaari',
-                    'Остров глухого леса (2022)',
+                    'Остров глухого леса',
                     'История о программисте Ване, тяге к одиночеству, поиске спойкойствия, дружбе и судьбоносном выборе',
                     'korpisaari.html',
                     '30'
                 )
                 +bookBlock(
                     'city-of-impossibility',
-                    'Город невозможности (2024)',
+                    'Город невозможности',
                     'Иногда так бывает: весна, зелень вовсю распускается на ветвях, днём градусов двадцать…',
                     'city-of-impossibility.html',
                     '30'
@@ -51,37 +51,31 @@ body.body_dark
                 )
                 div.read-first__button
                     +button('secondary', 'Читать все рассказы', 'stories.html')
+        div.read-second
             +pageHeadline('Лучшие автофикшн-эссе')
-            div.read-first__content
-                //+bookCard(
-                    'Пой мне ещё',
-                    '',
-                    '',
-                    'splean.html',
-                    'blank'
-                //)
-                +bookCard(
+            div.read-second__content
+                +bookBlock(
+                    'job',
                     'Десять работ',
-                    '',
-                    '',
-                    'splean.html',
-                    'blank'
+                    'Воспоминания о юности через призму десяти работ',
+                    'korpisaari.html',
+                    '30'
                 )
-                +bookCard(
+                +bookBlock(
+                    'violentia',
                     'Погнутый телескоп',
-                    '',
-                    '',
-                    'splean.html',
-                    'blank'
+                    'Художественное эссе о насилии, волочащемся за мной по пятам',
+                    'city-of-impossibility.html',
+                    '30'
                 )
-                +bookCard(
+                +bookBlock(
+                    'twelve-years-later',
                     'Двенадцать лет спустя',
-                    '',
-                    '',
+                    'Эссе о временной разлуке с Петербургом',
                     'twelve-years-later.html',
-                    'blank'
+                    '30'
                 )
-                div.read-first__button
+                div.read-second__button
                     +button('secondary', 'Читать все эссе', 'autofiction-esse.html')
         div.end 
             p

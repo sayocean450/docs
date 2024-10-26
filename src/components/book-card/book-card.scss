@@ -1,5 +1,5 @@
 .book-card {
-  @include col100(16px 16px 16px 16px, row, space-between);
+  @include col100(16px 16px 16px 0, row, space-between);
   font: $fontMainDesktop;
   border-bottom: 1px solid darken($white, 10%);
   
