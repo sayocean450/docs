@@ -1,0 +1,18 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-headline/article-headline
+include ../../components/article-breadcrumb/article-breadcrumb
+
+doctype html
+html
+    +head(
+      'Сошников — Пой мне ещё',
+      'История о том, как рок-группа Сплин повлияла на мою жизнь',
+      'http://soshnikov.space/img/sing-me-some-more-og.jpg',
+      'story'
+    )
+body.body_light
+    +header()
+    div.story
+        div.story__content
+            include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/writing/autofiction-esse/sing-me-some-more.md
