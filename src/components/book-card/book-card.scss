@@ -80,4 +80,12 @@
       margin-top: 8px;
     }
   }
+
+  &__review {
+    padding: 16px 56px 16px 56px;
+
+    @include respond(mobile) {
+      padding: 16px 0px 16px 0px;
+    }
+  }
 }

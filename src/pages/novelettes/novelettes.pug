@@ -1,0 +1,43 @@
+include ../../components/book-card/book-card
+include ../../components/book-link/book-link
+include ../../components/book-block/book-block
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/list-header/list-header
+include ../../components/page-headline/page-headline
+include ../../components/pagination/pagination
+
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+      'Артём Сошников • Рассказы',
+      '',
+      'http://soshnikov.space/img/default.jpg',
+      ''
+    )
+body.body_dark
+    +header('dark', 'writing')
+    div.content
+        +pageHeadline('Повести')
+        div.stories__content
+            +bookBlock(
+                'observer',
+                'Наблюдатель (2022)',
+                'Книжный сериал для сервиса «Яндекс.Книги» о командировке на малую родину, которая выворачивает жизнь менеджера Антона наизнанку',
+                'observer.html',
+                '30'
+            )
+            +bookBlock(
+                'reflection',
+                'Отражение в луже (2023)',
+                'Молодой писатель Борис спешно улетает за границу с одним чемоданом. Там он начинает вести телеграм-канал, описывая свои чувства и впечатления',
+                'reflection.html',
+                '30'
+            )
+            +bookBlock(
+                'inside',
+                'Инсайд (2018)',
+                'Два московских авантюриста случайно раскручивают инсайдерский телеграм-канал',
+                'inside.html',
+                '30'
+            )

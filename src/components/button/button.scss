@@ -5,6 +5,7 @@
   padding: 8px 16px 8px 16px;
   border-radius: 4px;
   font: $fontSmallDesktop;
+  border: 1px solid $blue;
 
   @include respond(mobile) {
     @include col100(16px 24px, center, center);
